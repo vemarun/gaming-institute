@@ -1,0 +1,63 @@
+
+<form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action={action}{applyid}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{ban_header_text}&nbsp;-->&nbsp;{ban_header_action_text}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <span class="text1"><b>{ban_info_general}:</b></span>
+        </td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{ban_nick_discription}:</span></TD>
+        <TD align = "left"><input class="input1" name="bannick" type="text" value="{ban_nick}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{ban_steamid_discription}:</span></TD>
+        <TD align = "left"><input class="input1" name="bansteamid" type="text" value="{ban_steamid}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{ban_ip_discription}:</span></TD>
+        <TD align = "left"><input class="input1" name="banip" type="text" value="{ban_ip}"></TD>
+      </TR>
+       <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{ban_reason_discription}:</span></TD>
+        <td align = "left"><textarea class="textarea1" name="banreason">{ban_reason}</textarea></td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{ban_length_discription}:</span></TD>
+        <TD align = "left">
+          <select name="banlength">
+            <!-- BEGIN scrollbanlengthblock -->
+            <option value="{scrollbanlengthvalue}"{scrollbanlengthselected}>{scrollbanlengthint}&nbsp;{scrollbanlengthdisc}</option>
+            <!-- END scrollbanlengthblock -->
+          </select>
+        </TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" colspan="2" border="0">
+            <TR>
+              <TD>
+                <form style="margin:0">
+                  <center>
+                   <input name="applybutton" type="submit" id="apply" value="&nbsp;&nbsp;&nbsp;&nbsp;{ban_apply_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&page={page}">
+                  <center>
+                    <input name="backbutton" type="submit" id="back" value="&nbsp;&nbsp;&nbsp;&nbsp;{ban_back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>

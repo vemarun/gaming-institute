@@ -1,0 +1,50 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <td class="tablekopf" colspan="6">{mods_header_text} ({mods_count})</td>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="5%" align = "left"><span class="text1"><b>{mods_id_discription}<b></span></td>
+        <TD width="40%" align = "left"><span class="text1"><b>{mods_name_discription}<b></span></td>
+        <TD width="25%" align = "left"><span class="text1"><b>{mods_folder_discription}<b></span></td>
+        <TD width="10%" align = "center"><span class="text1"><b>{mods_icon_discription}<b></span></td>
+		<TD width="10%" align = "center"><span class="text1"><b>{mods_advert_pic_discription}<b></span></td>
+        <TD width="10%" align = "center"><span class="text1"><b>{mods_options_discription}<b></span></td>
+      </TR>
+      <!-- BEGIN modsview -->
+      <TR class="tableinhalt1">
+        <td align = "left"><span class="text1">{mods_id}</span></td>
+        <td align = "left"><span class="text1">{mods_name}</span></td>
+        <td align = "left"><span class="text1">{mods_folder}</span></td>        
+        <td align = "center"><span class="text1">
+          <IMG src="{mods_game_pic}" title="{mods_name}" border=0></span>
+        </td>
+		<td align = "center"><span class="text1">
+          <IMG src="{mods_advert_pic}" title="{mods_advert_info}" border=0></span>
+        </td>
+        <td align = "center">
+          <a class="link1" href="index.php?section={section}&action=editmod&id={mods_id}"><img src="inc/pics/edit.gif" title="{mods_edit_pic_infotext}" border=0></a>
+          <a class="link1" href="index.php?section={section}&action=delmod&id={mods_id}"><img src="inc/pics/del.png" title="{mods_delete_pic_infotext}" border=0></a>
+        </td>
+      </TR>
+      <!-- END modsview -->
+      <!-- BEGIN modsviewempty -->
+      <TR class="tableinhalt1">
+        <td align = "center" colspan="6"><span class="text1"><br>{mods_no_entrys}<br><br></span></td>
+      </TR>
+      <!-- END modsviewempty -->
+       <TR class="tableinhalt2">
+        <TD colspan="6">
+          <form style="margin:0" method="post" action="index.php?section=mods&action=addmod">
+            <center>
+              <input name="addmodbutton" type="submit" id="addmod" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_mod_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+            </center>
+          </form>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <br>
+
+
+

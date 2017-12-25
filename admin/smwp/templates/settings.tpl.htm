@@ -1,0 +1,81 @@
+<!-- start settings_interface.tpl.htm -->
+<form style="margin:0" method="post" action="index.php?section={section}&action=applysettings">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{menue_settings}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+      <TD colspan="2"><span class="text1"><b>{menue_settings_general}:</b><span class="text1"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD width="35% align = "right" align = "right"><span class="text1">{menue_settings_default_language}:</span></TD>
+        <TD width="65% align = "left">
+         <select name="default_language">
+           <!-- BEGIN defaultlanguagesblock -->
+            <option value="{scrolldefaultlanguagesvalue}"{scrolldefaultlanguagesselected}>{defaultlanguages}</option>
+           <!-- END defaultlanguagesblock -->
+          </select>
+        </TD>
+      </TR>
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_settings_show_users}:</span></TD>
+        <TD align = "left"><input class="input3" name="show_users" type="text" value="{show_users}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_settings_show_server}:</span></TD>
+        <TD align = "left"><input class="input3" name="show_server" type="text" value="{show_server}"></TD>
+      </TR>
+	  <TR class="tableinhalt2">
+        <TD colspan="2"><span class="text1"><b>{menue_settings_server}:</b><span class="text1"></TD>
+      </TR>
+	   <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_settings_server_timeout}:</span></TD>
+        <TD align = "left">
+		  <table border=0 cellpadding=0 cellspacing=0>
+		    <tr>		  
+		      <td><input class="input3" name="server_timeout" type="text" value="{server_timeout}"></td>
+		      <td><span class="text1"><i>&nbsp;( {menue_settings_server_timeout_default_discription}: <b>2</b> )&nbsp;</i></span></td>
+		      <td><img src="inc/pics/warning.gif" title="{server_timeout_infotext}"></td>
+		    </tr>
+		  </table>		  
+		</TD>		
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2"><span class="text1"><b>{menue_settings_servergroups}:</b><span class="text1"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_settings_servergroups_enabled}:</span></TD>
+       <TD>
+          <input type="radio" name="servergroups_enabled" value="1"{servergroups_enabled_checkedenabled}><span class="text1">{menue_servergroups_enabled_enabledtext}</span>
+          <input type="radio" name="servergroups_enabled" value="0"{servergroups_enabled_checkeddisbaled}><span class="text1">{menue_servergroups_enabled_disabledtext}</span>
+        </TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_settings_show_servergroups}:</span></TD>
+        <TD align = "left"><input class="input3" name="show_servergroups" type="text" value="{show_servergroups}"></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2"><span class="text1"><b>{menue_settings_sqladmins}:</b><span class="text1"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_settings_show_clients}:</span></TD>
+        <TD align = "left"><input class="input3" name="show_clients" type="text" value="{show_clients}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_settings_show_groups}:</span></TD>
+        <TD align = "left"><input class="input3" name="show_groups" type="text" value="{show_groups}"></TD>
+      </TR>
+
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <center>
+            <input name="apply" type="submit" id="apply" value="&nbsp;&nbsp;&nbsp;&nbsp;{apply_settings_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+          </center>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>
+<!-- end settings_interface.tpl.htm -->
+

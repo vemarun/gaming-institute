@@ -1,0 +1,70 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <td class="tablekopf" colspan="5">{basicplayertracker_header_text}</td>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="5">
+                
+	     
+      <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&page={current_site}">
+		 <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right">
+                  <span class="text1">{basicplayertracker_server_discription}:</span>
+                </td>
+                <td align="center">{serverscrollbox}</td>
+                <td align="left">
+                  <input name="goserverbutton" type="submit" id="go" value="&nbsp;&nbsp;&nbsp;&nbsp;{basicplayertracker_server_go_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  <span class="text1">&frasl;</span>
+                  <input name="resetserverbutton" type="submit" id="reset" value="&nbsp;&nbsp;&nbsp;&nbsp;{basicplayertracker_server_reset_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+				  <!-- <input name="duplicateserverbutton" type="submit" id="duplicate" value="&nbsp;&nbsp;&nbsp;&nbsp;{basicplayertracker_server_douplikate_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"> -->
+                 </td>
+              </tr>
+            </table>
+	</form>
+            {search}
+			
+		</TD>
+      </TR>
+ <TR class="tableinhalt1" >
+        <TD align = "center" colspan="5"><span class="text1">{show_sites_antry_counts}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+
+        <TD width="40%" align = "left"><span class="text1"><b>{basicplayertracker_name_discription}<b></span></td>
+        <TD width="22%" align = "left"><span class="text1"><b>{basicplayertracker_steamid_discription}<b></span></td>
+        <TD width="22%" align = "left"><span class="text1"><b>{basicplayertracker_ip_discription}<b></span></td>
+        <TD width="8%" align = "center"><span class="text1"><b>{basicplayertracker_status_discription}<b></span></td>
+		<TD width="8%" align = "center"><span class="text1"><b>{basicplayertracker_game_discription}<b></span></td>
+      </TR>
+      <!-- BEGIN basicplayertrackerview -->
+      <TR class="tableinhalt1">
+        <td align = "left">
+		  <table border="0" cellspacing="0" cellpadding="0">
+		    <tr>
+		      <td>{basicplayertracker_country}&nbsp;</td>
+			  <td><span class="text1">{basicplayertracker_name}</span></td>
+			</tr>
+		  </table>
+		</td>		
+        <td align = "left"><span class="text1">{basicplayertracker_steamid}</span></td>
+        <td align = "left"><span class="text1">{basicplayertracker_ip}</span></td>
+		<td align = "center"><span class="text1">{basicplayertracker_status}</span></td>
+        <td align = "center"><span class="text1">{modpic}</td>
+      </TR>
+      <!-- END basicplayertrackerview -->
+      <!-- BEGIN basicplayertrackerviewempty -->
+      <TR class="tableinhalt1">
+        <td align = "center" colspan="5"><span class="text1"><br>{basicplayertracker_no_entrys}<br><br></span></td>
+      </TR>
+      <!-- END basicplayertrackerviewempty -->
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="5"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="5"><BR></td>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <br>

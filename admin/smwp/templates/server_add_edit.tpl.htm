@@ -1,0 +1,76 @@
+<form style="margin:0" method="post" action="index.php?section={section}&action={execaction}{actionid}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{server_edit_add_discription}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <span class="text1"><b>{server_info_general}:</b></span>
+        </td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD width="30%"align = "right"><span class="text1">{server_short_name_discription}:</span></TD>
+        <TD width="70%"align = "left">
+          <input class="input1" name="shortname" type="text" maxlength="24" id="userpass" value="{server_short_name}">
+	    <span class="text1">&nbsp;<i>({server_short_name_info})</i></span>
+        </TD>
+      </TR>
+       <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{server_ip_discription}&nbsp;:&nbsp;{server_port_discription}:</span></TD>
+        <TD align = "left"><input class="input1" name="ip" type="text" maxlength="128" value="{server_ip}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{server_rcon_discription}</span></TD>
+        <TD align = "left"><input class="input7" name="tja" type="password" maxlength="255" value="{server_rcon}"></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <span class="text1"><b>{server_info_ftp}</b></span>
+        </td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{server_ip_discription}&nbsp;:&nbsp;{server_port_discription}:</span></TD>
+        <TD align = "left"><input class="input1" name="ftpip" type="text" maxlength="128" value="{server_ftp_ip}"></TD>
+      </TR>
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{server_ftp_username_discription}:</span></TD>
+        <TD align = "left"><input class="input1" name="ftpusername" type="text" maxlength="255" value="{server_ftp_username}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{server_pw_discription}:</span></TD>
+        <TD align = "left"><input class="input7" name="ftptja" type="password" maxlength="255" value="{server_pw}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{server_remotepath_discription}:</span></TD>
+        <TD align = "left">
+          <input class="input11" name="ftppath" type="text" maxlength="255" value="{server_remotepath}"><br>
+          <span class="text1"><i>{server_remotepath_info_1}</i></span><br>
+          <span class="text1"><i>{server_remotepath_info_2}</i></span>
+        </TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" colspan="2" border="0">
+            <TR>
+              <TD>
+                <form style="margin:0">
+                  <center>
+                   <input name="addeditserverbutton" type="submit" id="execaddeditserver" value="&nbsp;&nbsp;&nbsp;&nbsp;{apply_server_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section={section}">
+                  <center>
+                    <input name="backbutton" type="submit" id="backtoclients" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_server_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>

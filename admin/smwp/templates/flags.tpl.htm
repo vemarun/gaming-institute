@@ -1,0 +1,41 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="4">{menue_flags}</TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="4">{search}</TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="4"><span class="text1">{show_sites_antry_counts}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="5%" align = "left"><span class="text1"><b>{menue_target_id}</b></span></TD>
+        <TD width="32%" align = "left"><span class="text1"><b>{menue_target_name}</b></span></TD>
+        <TD width="54%" align = "left"><span class="text1"><b>{menue_target_flags}</b></span></TD>
+        <TD width="9%" align = "center"><span class="text1"><b>{menue_target_action}</b></span></TD>
+      </TR>
+        <!-- BEGIN targetsanzeige -->
+          <TR class="tableinhalt1">
+             <td align = "left"><span class="text1">{target_id}</span></td>
+             <td align = "left"><span class="text1">{target_name}</span></td>
+             <td align = "left"><span class="text1">{target_flags}</span></td>
+             <td align = "center">
+               <a class="link1" href="{target_flags_edit_link}">{menue_target_flags_edit}</a>
+             </td>
+          </TR>
+        <!-- END targetsanzeige -->
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="4"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="4">
+          <span class="text1"><br></span>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+  
+  <br>
+
+  {flaginfo}

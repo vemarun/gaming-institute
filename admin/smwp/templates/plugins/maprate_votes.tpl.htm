@@ -1,0 +1,60 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <td class="tablekopf" colspan="3">{maprate_pluginname}&nbsp;-->&nbsp;{maprate_map}</td>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="6">{search}</TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="3"><span class="text1">{show_sites_antry_counts}</span></TD>
+      </TR>
+       <TR class="tableinhalt2" >
+        <TD align = "left" colspan="4">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="right">{maprate_terrible_stars}</td>
+              <td align="left"><span class="text1"><b>={maprate_terrible_discription}</b></span></td>
+              <td align="right">{maprate_poor_stars}</td>
+              <td align="left"><span class="text1"><b>={maprate_poor_discription}</b></span></td>
+              <td align="right">{maprate_average_stars}</td>
+              <td align="left"><span class="text1"><b>={maprate_average_discription}</b></span></td>
+              <td align="right">{maprate_good_stars}</td>
+              <td align="left"><span class="text1"><b>={maprate_good_discription}</b></span></td>
+              <td align="right">{maprate_excellent_stars}</td>
+              <td align="left"><span class="text1"><b>={maprate_excellent_discription}</b></span></td>
+            </tr>
+          </table>
+        </TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="40%" align="left"><span class="text1"><b>{maprate_player_discription}<b></span></td>
+        <TD width="15%" align="center"><span class="text1"><b>{maprate_rateing_discription}<b></span></td>
+        <TD width="40%" align="left"><span class="text1"><b>{maprate_date_discription}<b></span></td>
+      </TR>
+      <!-- BEGIN playerview -->
+     <TR class="tableinhalt1">
+        <TD align = "left"><span class="text1">{maprate_player}</span></td>
+        <TD align = "center"><span class="text1">{maprate_rateing}</span></td>
+        <TD align = "left"><span class="text1">{maprate_date}</span></td>
+      </TR>
+      <!-- END playerview -->
+      <!-- BEGIN playerviewempty -->
+      <TR class="tableinhalt1">
+        <td align = "center" colspan="3"><span class="text1"><br>{maprate_novotes}<br><br></span></td>
+      </TR>
+      <!-- END playerviewempty -->
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="3"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+     <TR class="tableinhalt2" >
+        <TD align = "left" colspan="4">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="50%" align="center"><a class="link1" href="index.php?section={section}&plugin={plugin}">&raquo;&nbsp;{maprate_simple_overview_text}&nbsp;&laquo;</a></td>
+              <td width="50%" align="center"><a class="link1" href="index.php?section={section}&plugin={plugin}&view=detailed">&raquo;&nbsp;{maprate_detailed_overview_text}&nbsp;&laquo;</a></td>
+            </tr>
+          </table>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>

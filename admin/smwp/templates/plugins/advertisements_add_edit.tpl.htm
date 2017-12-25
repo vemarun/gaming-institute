@@ -1,0 +1,114 @@
+<form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action={action}&id={id}&page={page}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{advertisements_header_text}&nbsp;-->&nbsp;{advertisements_header_action_text}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <span class="text1"><b>{advertisements_info_general}:</b></span><br>
+        </td>
+      </TR>
+      <!-- BEGIN lastedit -->
+      <TR class="tableinhalt1">
+        <TD width="20%" align = "right"><span class="text1">{advertisements_lastedit_discription}:</span></TD>
+        <TD width="80%" align = "left"><span class="text1">{advertisements_user}, {advertisements_date}</span></TD>
+      </TR>
+      <!-- END lastedit -->
+      <TR class="tableinhalt1">
+        <TD width="15%" align = "right"><span class="text1">{advertisements_text_discription}:</span></TD>
+        <TD width="85%" align = "left">
+		  <textarea class="textarea2" rows="2"  name="text">{advertisements_text}</textarea><br>
+   	        <span class="text1"><b>Variables:</b></span><br>
+			<span class="text2">&#123;CURRENTMAP&#125;, &#123;DATE&#125;, &#123;TIME&#125;, &#123;IP&#125;, &#123;PORT&#125;, &#123;TIMELEFT&#125; and &#123;SM_NEXTMAP&#125;<br>
+			<span class="text1"><b>Say colors:</b></span><br>
+		    <span class="text2">&#123;DEFAULT&#125;, &#123;TEAM&#125;, &#123;GREEN&#125; and &#123;LIGHTGREEN&#125;<br>
+		    <span class="text1"><b>Top say colors:</b></span><br>
+			<span class="text2">
+              &#123;RED&#125;, &#123;ORANGE&#125;, &#123;WHITE&#125;, &#123;GREEN&#125;, &#123;BLUE&#125;, &#123;YELLOW&#125;,<br>
+			  &#123;OLIVE&#125;, &#123;PURPLE&#125;, &#123;CYAN&#125;, &#123;PINK&#125;, &#123;LIGHTBLUE&#125;, &#123;LIME&#125;, &#123;VIOLET&#125;<br>
+            </span>
+        </TD>
+      </TR>
+       <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_type_discription}:</span></TD>
+        <TD align = "left">
+	      <table border="0">
+  		    <tr>		      
+		      <td align = "left"><input name="adstype" value="say" {checkedsay} type="radio"></td>
+			  <td align = "left"><span class="text1">Say - <i>{advertisements_say_info}</i></span></td>
+		    </tr>
+			<tr>
+		      <td align = "left"><input name="adstype" value="hint" {checkedhint} type="radio"></td>
+			  <td align = "left"><span class="text1">Hint - <i>{advertisements_hint_info}</i></span></td>
+            </tr>
+			<tr>		    
+		      <td align = "left"><input name="adstype" value="center" {checkedcenter} type="radio"></td>
+			  <td align = "left"><span class="text1">Center - <i>{advertisements_center_info}</i></span></td>
+		    </tr>
+			<tr>		    
+		      <td align = "left"><input name="adstype" value="top" {checkedtop} type="radio"></td>
+			  <td align = "left"><span class="text1">Top - <i>{advertisements_top_info}</i></span></td>
+		    </tr>
+		  </table>
+       </TD>
+      </TR>
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_visible_discription}:</span></TD>
+        <TD align = "left">
+	      <table border="0">
+  		    <tr>		      
+		      <td align = "left"><input name="adsflag" value="all" {checkedall} type="radio"></td>
+			  <td align = "left"><span class="text1">{advertisements_all_info}</span></td>
+			</tr>			  
+		    <tr>
+		      <td align = "left"><input name="adsflag" value="noadmins" {checkednoadmins} type="radio"></td>
+			  <td align = "left"><span class="text1">{advertisements_noadmins_info}</span></td>
+			</tr>			  
+            <tr>		    
+		      <td align = "left"><input name="adsflag" value="onlyadmins" {checkedonlyadmins} type="radio"></td>
+			  <td align = "left"><span class="text1">{advertisements_onlyadmins_info}</span></td>
+		    </tr>
+		  </table>
+        </TD>
+      </TR>
+	  
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{advertisements_game_discription}:</span></TD>
+        <TD align = "left">
+		  <select name="adsgame">
+            <option value="All">All</option>
+            <!-- BEGIN scrollgametype -->
+            <option value="{scrollgametypevalue}"{scrollgametypeselected}>{scrollgametypetext}</option>
+            <!-- END scrollgametype -->
+          </select>
+		</TD>        
+      </TR>
+	  
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" border="0">
+            <TR>
+              <TD>
+               <form style="margin:0">
+                <center>
+                  <input name="addeditadsbutton" type="submit" id="execaddeditads" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_edit_das_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&page={page}">
+                  <center>
+                    <input name="backbutton" type="submit" id="backtoads" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_ads_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>
+<br>
+{colorhelp}

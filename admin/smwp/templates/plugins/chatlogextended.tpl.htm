@@ -1,0 +1,129 @@
+<!-- start chatlogextended.tpl.htm -->
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="3">{pluginname}&nbsp;-->&nbsp;{chatlogex_server}</TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="3">
+          <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&page={current_site}">
+            <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right">
+                  <span class="text1">{menue_chatlogex_server}:</span>
+                </td>
+                <td align="center">
+                  <select name="serverid">
+                  <!-- BEGIN scrollserverblock -->
+                    <option value="{scrollservervalue}"{scrollserverselected}>{scrollserver}</option>
+                  <!-- END scrollserverblock -->
+                  </select>
+                </td>
+                <td align="left">
+                  <input name="goserverbutton" type="submit" id="go" value="&nbsp;&nbsp;&nbsp;&nbsp;{chatlogex_server_go_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  <span class="text1">&frasl;</span>
+                  <input name="resetserverbutton" type="submit" id="reset" value="&nbsp;&nbsp;&nbsp;&nbsp;{chatlogex_server_reset_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                 </td>
+              </tr>
+            </table>
+          </form>
+          {search}
+        </TD>
+      </TR>
+      <TR class="tableinhalt1" >
+         <!--
+        <TD align = "right" colspan="1">
+           <span class="text1">{menue_chatlogex_filter}:</span>
+        </TD>
+             -->
+        <TD align = "center" colspan="3">
+          <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=apply&sid={sid}">
+            <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <!--
+                <td align="left" rowspan="2">
+                  <span class="text1">{menue_chatlogex_filter}:&nbsp;</span>
+                </td> -->
+                <td align="center">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right">
+                      <span class="text1">{menue_chatlogex_filter}:</span>
+                    </td>
+                    <td align="right">
+                      <input class="input10" name="filter" type="text" value="{chatlogex_filter}">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td align="left" rowspan="2">
+                &nbsp;<input name="applybutton" type="submit" id="apply" value="&nbsp;&nbsp;&nbsp;&nbsp;{chatlogex_hide_apply_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="right">
+                      <span class="text1">{menue_chatlogex_hide}:</span>
+                    </td>
+                    <td align="right">
+                      <input type="checkbox" name="connections" value="1" {connectionschecked}>
+                    </td>
+                    <td align="left">
+                      <span class="text1">{menue_chatlogex_connections}&nbsp;</span>
+                    </td>
+                    <td align="right">
+                      <input type="checkbox" name="playersonline" value="1" {playersonlinechecked}>
+                    </td>
+                    <td align="left">
+                      <span class="text1">{menue_chatlogex_playersonline}&nbsp;</span>
+                    </td>
+                    <td align="right">
+                      <input type="checkbox" name="mapinfos" value="1" {mapinfoschecked}>
+                    </td>
+                    <td align="left">
+                      <span class="text1">{menue_chatlogex_mapinfos}</span>
+                    </td>
+                    <td align="right">
+                      <input type="checkbox" name="console" value="1" {consolechecked}>
+                    </td>
+                    <td align="left">
+                      <span class="text1">{menue_chatlogex_console}&nbsp;</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          </form>
+        </TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="3"><span class="text1">{show_sites_antry_counts}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="18%" align = "left"><span class="text1"><b>{menue_chatlogex_date}<b></span></TD>
+        <TD width="26%" align = "left"><span class="text1"><b>{menue_chatlogex_nick}<b></span></TD>
+        <TD width="56%" align = "left"><span class="text1"><b>{menue_chatlogex_text}<b></span></TD>
+      </TR>
+        <!-- BEGIN chatlogexempty -->
+          <TR class="tableinhalt1">
+             <td align = "center" colspan="6"><span class="text1"><br><i>{chatlogex_empty}</i><br><br></span></td>
+          </TR>
+        <!-- END chatlogexempty -->
+        <!-- BEGIN chatlogexanzeige -->
+          <TR class="tableinhalt1">
+             <td align = "left"><span class="text2">{beginbold}<font color="{chatlogex_text_color}">{chatlogex_date}</font>{endbold}</span></td>
+             <td align = "left"><span class="text2">{beginbold}<font color="{chatlogex_text_color}">{chatlogex_nick}</font>{endbold}</span></td>
+             <td align = "left"><span class="text2">{beginbold}<font color="{chatlogex_text_color}">{chatlogex_text}</font>{endbold}</span></td>
+          </TR>
+        <!-- END chatlogexanzeige -->
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="3"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+      </TR>
+
+    </TBODY>
+  </TABLE>
+<!-- end chatlogextended.tpl.htm -->
+

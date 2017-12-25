@@ -1,0 +1,69 @@
+<form style="margin:0" method="post" action="index.php?section=servergroups&action={execaddserveraction}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="3">{menue_servergroups_server_add_edit}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="3">
+          <span class="text1"><b>{menue_servergroups_info_serverlist}:</b></span><br>
+        </td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD width="5%" align = "center">
+          <input type="radio" name="addserverart" value="0"{serverlistcheckedyes}>
+        </TD>
+        <TD width="30%" align = "right">
+           <span class="text1">{menue_servergroups_server}:</span>
+        </TD>
+        <TD width="65%" lign = "left">
+          <select name="server">
+            <!-- BEGIN scrollserverblock -->
+            <option value="{scrollserverid}"{scrollserveridselected}>{scrollserver}</option>
+            <!-- END scrollserverblock -->
+          </select>
+        </TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="3">
+          <span class="text1"><b>{menue_servergroups_info_ownip}:</b></span><br>
+        </td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "center">
+          <input type="radio" name="addserverart" value="1"{serverowncheckedyes}>
+        </TD>
+        <TD align = "right">
+          <span class="text1">{menue_server_ip}/{menue_server_port}:</span>
+        </TD>
+        <TD colspan="3">
+          <input class="input8" name="serverip" type="text" value="{server_ip}">
+          <span class="text1">:</span>
+          <input class="input9" name="serverport" type="text" value="{server_port}">
+        </TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="3">
+          <TABLE width="100%" border="0">
+            <TR>
+              <TD>
+               <form style="margin:0">
+                <center>
+                  <input name="addserverbutton" type="submit" id="exec" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_edit_server_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section=servergroups">
+                  <center>
+                    <input name="backbutton" type="submit" id="backtoserver" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_server_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>

@@ -1,0 +1,52 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="6">{servermms_plugin}&nbsp;-->&nbsp;{servermms_discription}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="25%" align = "center"><span class="text1"><b>{servermms_server_id_discription}<b></span></TD>
+        <TD width="25%" align = "center"><span class="text1"><b>{servermms_server_discription}<b></span></TD>
+        <TD width="42%" align = "center"><span class="text1"><b>{servermms_action_discription}<b></span></TD>
+        <TD width="8%" align = "center"><span class="text1"><b>{servermms_options_discription}<b></span></TD>
+      </TR>
+        <!-- BEGIN serveridenzeige -->
+          <TR class="tableinhalt1">
+             <td align = "center"><span class="text1">{servermms_server_id}</span></td>
+             <td align = "center">
+               <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                 <tr>
+                   <td align="center" width="10%"><img src="inc/pics/server.gif" title="{servermms_server_edit}" border=0><td>
+                   <td align="center" width="10%"><span class="text1">=</span></td>
+                   <td align="center" width="10%"><span class="text1">{servermms_server_count}</span></td>
+                   <td align="center" width="70%"><a class="link1" href="index.php?section={section}&plugin={plugin}&id={servermms_server_id}">&raquo;&nbsp;{servermms_server_edit}&nbsp;&laquo;</a></td>
+                 </tr>
+               </table>
+             </td>
+             <td align = "center"><a class="link1" href="index.php?section=plugins&plugin={plugin}&sid={servermms_server_id}">&raquo;&nbsp;{servermms_show}&nbsp;&laquo;</a></td>
+             <td align = "center">
+               <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center"><a class="link1" href="index.php?section={section}&plugin={plugin}&action=editpsidcvar&sid={servermms_server_id}"><img src="inc/pics/edit.gif" title="{servermss_edit_pic_infotext}" border=0></a><td>
+                  <td align="center"><a class="link1" href="index.php?section={section}&plugin={plugin}&action=delpsidcvar&sid={servermms_server_id}"><img src="inc/pics/del.png" title="{servermss_delete_pic_infotext}" border=0></a><td>
+                </tr>
+              </table>
+             </td>
+          </TR>
+        <!-- END serveridenzeige -->
+        <!-- BEGIN serveridenzeigeempty -->
+          <TR class="tableinhalt1">
+             <td align = "center" colspan="6"><span class="text1"><br>{servermms_empty}<br><br></span></td>
+          </TR>
+        <!-- END serveridenzeigeempty -->
+          <TR class="tableinhalt2">
+        <TD colspan="6">
+          <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=addpsidcvar">
+            <center>
+              <input name="addserverbutton" type="submit" id="addserver" value="&nbsp;&nbsp;&nbsp;&nbsp;{servermms_server_add_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+            </center>
+          </form>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+

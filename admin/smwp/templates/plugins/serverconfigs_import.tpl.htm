@@ -1,0 +1,67 @@
+
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+         <TD class="tablekopf" colspan="2">{serverconfigs_pluginname}&nbsp;-->&nbsp;<u>{serverconfigs_serverid_cvar}&nbsp;=&nbsp;{sid}</u>&nbsp;-->&nbsp;{serverconfigs_import_discription}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2"><span class="text1"><i>{serverconfigs_import_infotext}</i></span></td>
+      </TR>
+      <form style="margin:0" method="post" enctype="multipart/form-data" action="index.php?section={section}&plugin={plugin}&action=execimportfile&sid={sid}">
+      
+      <TR class="tableinhalt1">
+        <TD width="20%" align = "right"><span class="text1">{serverconfigs_import_file_discription}:</span></TD>
+        <TD width="80%">
+           <input size="60" name="datei" type="file">
+        </TD>
+      </TR>
+	  
+	  <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{serverconfigs_import_ifexist_discription}:</span></TD>
+        <TD>
+            <table border="0">
+  		    <tr>		      
+		      <td align = "left"><input name="importart" value="create" checked type="radio"></td>
+			  <td align = "left"><span class="text1">{serverconfigs_import_create_discription}</span></td>
+		    </tr>
+			<tr>
+		      <td align = "left"><input name="importart" value="replace" type="radio"></td>
+			  <td align = "left"><span class="text1">{serverconfigs_import_replace_discription}</span></td>
+            </tr>
+			<tr>		    
+		      <td align = "left"><input name="importart" value="skip" type="radio"></td>
+			  <td align = "left"><span class="text1">{serverconfigs_import_skip_discription}</span></td>
+		    </tr>
+		  </table>
+        </TD>
+      </TR>
+	  <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" border="0">
+            <TR>
+              <TD>
+
+                <center>
+                   <input name="addbanbutton" type="submit" id="addban" value="&nbsp;&nbsp;&nbsp;--&gt;&nbsp;{serverconfigs_import_button_text}&nbsp;&lt;--&nbsp;&nbsp;&nbsp;&nbsp;">   
+                </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="javascript:history.back()">
+                  <center>
+              <input name="backbutton" type="submit" id="back" value="&nbsp;&nbsp;&nbsp;&nbsp;{serverconfigs_back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"> 
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+	  
+	  
+	  
+	  
+	  
+	  
+	 
+    </TBODY>
+  </TABLE>

@@ -1,0 +1,59 @@
+    <!-- start servergroups.tpl.htm -->
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="5">{menue_servergroups}</TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="5"><span class="text1">{show_sites_antry_counts}</span></TD>
+      </TR>
+        <TR class="tableinhalt2">
+        <TD width="5%"  align = "left"><span class="text1"><b>{menue_server_id}<b></span></TD>
+        <TD width="30" align = "left"><span class="text1"><b>{menue_server_name}<b></span></TD>
+        <TD width="20%" align = "center"><span class="text1"><b>{menue_server_ip}/{menue_server_port}<b></span></TD>
+        <TD width="20%" align = "center"><span class="text1"><b>{menue_server_groups}<b></span></TD>
+        <TD width="10%" align = "center"><span class="text1"><b>{menue_server_options}<b></span></TD>
+      </TR>
+        <!-- BEGIN servergroupsanzeigeempty -->
+          <TR class="tableinhalt1">
+             <td align = "center" colspan="6"><span class="text1"><br>{menue_server_empty}<br><br></span></td>
+          </TR>
+        <!-- END servergroupsanzeigeempty -->
+        <!-- BEGIN servergroupsanzeige -->
+          <TR class="tableinhalt1">
+             <td align = "left"><span class="text1">{server_id}</span></td>
+             <td align = "left">
+             <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                 <tr>
+                   <td align="right"><img src="inc/pics/server.gif" title="{server_ip}:{server_port}" border=0><td>
+                   <td align="left" width="100%"><span class="text1">{server_name}</span></td>
+                 </tr>
+               </table>
+             </td>
+             <td align = "center"><span class="text1">{server_ip}:{server_port}</span></td>
+             <td align = "center">
+               <span class="text1">{server_groups}</span>
+               <a class="link1" href="index.php?section=servergroupsgroups&id={server_id}">&raquo;&nbsp;{menue_server_edit}&nbsp;&laquo;</a>
+               </td>
+               <td align = "center">
+                <a class="link1" href="index.php?section=servergroups&action=editserver&id={server_id}"><img src="inc/pics/edit.gif" title="{server_edit_pic_infotext}" border=0></a>
+                <a class="link1" href="index.php?section=servergroups&action=delserver&id={server_id}"><img src="inc/pics/del.png" title="{server_delete_pic_infotext}" border=0></a>
+             </td>
+          </TR>
+        <!-- END servergroupsanzeige -->
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="5"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+      </TR>
+        <TR class="tableinhalt2">
+        <TD colspan="5">
+          <form style="margin:0" method="post" action="index.php?section=servergroups&action=addserver">
+            <center>
+              <input name="adduserbutton" type="submit" id="adduser" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_server_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+            </center>
+          </form>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+<!-- end servergroups.tpl.htm -->
+

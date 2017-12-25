@@ -1,0 +1,126 @@
+<form style="margin:0" method="post" action="{execaddedituser}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{menue_user}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <span class="text1"><b>{menue_user_info_general}:</b></span><br>
+          <span class="text1"><i>{password_change_text}</i></span>
+        </td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_user_name}:</span></TD>
+        <TD align = "left"><input class="input1" name="username" type="text" value="{user_name}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_user_pass}:</span></TD>
+        <TD align = "left"><input class="input1" name="userpass" type="password" id="userpass"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_user_pass_retry}:</span></TD>
+        <TD align = "left"><input class="input1" name="userpassretry" type="password" id="userpass"></TD>
+      </TR>
+       <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_user_mail}:</span></TD>
+        <TD align = "left"><input class="input1" name="usermail" type="text" value="{user_mail}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{user_language_discription}:</span></TD>
+        <TD>
+          <select name="userlanguage">
+            <!-- BEGIN scrolluserlanguageblock -->
+            <option value="{scrolluserlanguagevalue}"{scrolluserlanguageselected}>{scrolluserlanguage}</option>
+            <!-- END scrolluserlanguageblock -->
+          </select>
+        </TD>
+      </TR>
+      <!-- BEGIN admineditusersanzeige -->
+      <TR class="tableinhalt2">
+        <TD colspan="2"><span class="text1"><b>{menue_user_permissions}:</b><br><i>{userextrastatustext}</i></span></TD>
+      </TR>
+      <TR class="{tdcolor}">
+        <TD align = "right"><span class="text1">{menue_user_permissionssettings}:</span></TD>
+        <TD>
+          <input type="radio" name="editpermissionssettings" value="1"{editpermissionssettingscheckedyes} {radiodisabled}><span class="text1">{menue_user_checkyes}</span>
+          <input type="radio" name="editpermissionssettings" value="0"{editpermissionssettingscheckedno} {radiodisabled}><span class="text1">{menue_user_checkyno}</span>
+        </TD>
+      </TR>
+      <TR class="{tdcolor}">
+        <TD align = "right"><span class="text1">{menue_user_editusers}:</span></TD>
+        <TD>
+          <input type="radio" name="editusers" value="1"{editusercheckedyes} {radiodisabled}><span class="text1">{menue_user_checkyes}</span>
+          <input type="radio" name="editusers" value="0"{editusercheckedno} {radiodisabled}><span class="text1">{menue_user_checkyno}</span>
+        </TD>
+      </TR>
+      <TR class="{tdcolor}">
+        <TD align = "right"><span class="text1">{menue_user_interfacesettings}:</span></TD>
+        <TD>
+          <input type="radio" name="editinterfacesettings" value="1"{editinterfacesettingscheckedyes} {radiodisabled}><span class="text1">{menue_user_checkyes}</span>
+          <input type="radio" name="editinterfacesettings" value="0"{editinterfacesettingscheckedno} {radiodisabled}><span class="text1">{menue_user_checkyno}</span>
+        </TD>
+      </TR>
+       <TR class="{tdcolor}">
+        <TD align = "right"><span class="text1">{menue_user_editserversettings}:</span></TD>
+        <TD>
+          <input type="radio" name="editserversettings" value="1"{editserversettingscheckedyes} {radiodisabled}><span class="text1">{menue_user_checkyes}</span>
+          <input type="radio" name="editserversettings" value="0"{editserversettingscheckedno} {radiodisabled}><span class="text1">{menue_user_checkyno}</span>
+        </TD>
+      </TR>
+      <TR class="{tdcolor}">
+        <TD align = "right"><span class="text1">{menue_user_editmods}:</span></TD>
+        <TD>
+          <input type="radio" name="editmods" value="1"{editmodscheckedyes} {radiodisabled}><span class="text1">{menue_user_checkyes}</span>
+          <input type="radio" name="editmods" value="0"{editmodscheckedno} {radiodisabled}><span class="text1">{menue_user_checkyno}</span>
+        </TD>
+      </TR>
+      <TR class="{tdcolor}">
+        <TD align = "right"><span class="text1">{menue_user_editpluginsettings}:</span></TD>
+        <TD>
+          <input type="radio" name="editpluginsettings" value="1"{editpluginsettingscheckedyes} {radiodisabled}><span class="text1">{menue_user_checkyes}</span>
+          <input type="radio" name="editpluginsettings" value="0"{editpluginsettingscheckedno} {radiodisabled}><span class="text1">{menue_user_checkyno}</span>
+        </TD>
+      </TR>
+      <TR class="{tdcolor}">
+        <TD align = "right"><span class="text1">{menue_user_editsqladmins}:</span></TD>
+        <TD>
+          <input type="radio" name="editsqladmins" value="1"{editsqladminscheckedyes} {radiodisabled}><span class="text1">{menue_user_checkyes}</span>
+          <input type="radio" name="editsqladmins" value="0"{editsqladminscheckedno} {radiodisabled}><span class="text1">{menue_user_checkyno}</span>
+        </TD>
+      </TR>
+      <!-- END admineditusersanzeige -->
+      <!-- BEGIN pluginaccessanzeige -->
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_user_pluginname}:</span></TD>
+        <TD>
+          <input type="radio" name="pluginname" value="1"{plugincheckedyes}><span class="text1">{menue_user_checkyes}</span>
+          <input type="radio" name="pluginname" value="0"{plugincheckedno}><span class="text1">{menue_user_checkyno}</span>
+        </TD>
+      </TR>
+      <!-- END pluginaccessanzeige -->
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" colspan="2" border="0">
+            <TR>
+              <TD>
+                <form style="margin:0">
+                  <center>
+                   <input name="addedituserbutton" type="submit" id="execaddedituser" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_edit_user_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section=user">
+                  <center>
+                    <input name="backbutton" type="submit" id="backtoclients" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_user_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>

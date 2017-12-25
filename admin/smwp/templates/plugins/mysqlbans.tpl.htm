@@ -1,0 +1,71 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <td class="tablekopf" colspan="6">{ban_header_text}</td>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="6">
+          <TABLE border="0" width="100%">
+            <TR>
+              <td align = "center">
+                {search}
+              </td>
+              <td align = "center">
+                <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=addban&page={page}">
+                  <input name="addbanbutton" type="submit" id="addban" value="&nbsp;&nbsp;&nbsp;&nbsp;{ban_add_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </form>
+              </td>
+              <td align = "left">
+                <a class="link1" href="index.php?section={section}&plugin={plugin}&action=exportban&page={page}"><img src="inc/pics/export.gif" title="{ban_export_pic_infotext}" border=0></a>
+                &nbsp;
+                <a class="link1" href="index.php?section={section}&plugin={plugin}&action=importban&page={page}"><img src="inc/pics/import.gif" title="{ban_import_pic_infotext}" border=0></a>
+              </td>
+            </TR>
+          </TABLE>
+        </TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="6"><span class="text1">{show_sites_antry_counts}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="12%" align = "left"><span class="text1"><b>{ban_date_discription}<b></span></td>
+        <TD width="23%" align = "left"><span class="text1"><b>{ban_nick_discription}<b></span></td>
+        <TD width="22%" align = "left"><span class="text1"><b>{ban_reason_discription}<b></span></td>
+        <TD width="17%" align = "left"><span class="text1"><b>{ban_length_discription}<b></span></td>
+        <TD width="15%" align = "left"><span class="text1"><b>{ban_by_discription}<b></span></td>
+        <TD width="11%" align = "center"><span class="text1"><b>{ban_options_discription}<b></span></td>
+      </TR>
+      <!-- BEGIN banview -->
+      <TR class="tableinhalt1">
+        <td align = "left"><span class="text1">{ban_date}</span></td>
+        <td align = "left"><a class="link1" href="index.php?section={section}&plugin={plugin}&id={ban_id}&page={page}">{ban_nick}</a></td>
+        <td align = "left"><a class="link1" href="index.php?section={section}&plugin={plugin}&id={ban_id}&page={page}">{ban_reason}</a></td>
+        <td align = "left"><span class="text1">{ban_length}</span></td>
+        <td align = "left"><span class="text1">{ban_by}</span></td>
+        <td align = "center">
+        <a class="link1" href="index.php?section={section}&plugin={plugin}&page={page}&id={ban_id}"><img src="inc/pics/info.gif" title="{ban_details_pic_infotext}" border=0></a>
+        <a class="link1" href="index.php?section={section}&plugin={plugin}&action=editban&page={page}&id={ban_id}"><img src="inc/pics/edit.gif" title="{ban_edit_pic_infotext}" border=0></a>
+        <a class="link1" href="index.php?section={section}&plugin={plugin}&action=delban&page={page}&id={ban_id}"><img src="inc/pics/del.png" title="{ban_delete_pic_infotext}" border=0></a>
+        </td>
+      </TR>
+      <!-- END banview -->
+      <!-- BEGIN banviewempty -->
+      <TR class="tableinhalt1">
+        <td align = "center" colspan="7"><span class="text1"><br>{ban_no_entrys}<br><br></span></td>
+      </TR>
+        <!-- END banviewempty -->
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="6"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <td align = "center" colspan="6">
+                <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=addban&page={page}">
+                  <input name="addbanbutton" type="submit" id="addban" value="&nbsp;&nbsp;&nbsp;&nbsp;{ban_add_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </form>
+
+
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+

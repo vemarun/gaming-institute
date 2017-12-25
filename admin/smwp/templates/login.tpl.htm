@@ -1,0 +1,35 @@
+{header}
+<center>
+<TABLE class="haupttable" cellSpacing=1 cellPadding=0>
+  <TBODY>
+    <TR>
+      <TD>{logo}</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<br><br><br>
+<form style="margin:0" method="post" action="index.php">
+  <TABLE class="logintable" cellSpacing=1 cellPadding=4>
+         <TBODY>
+           <TR>
+             <TD class="tablekopf">{logintext}</TD>
+           </TR>
+           <TR class="tableinhalt1">
+             <td align = "left" valign = "middle">
+
+              <span class="text3">{warning}</span>
+              <span class="text1">{usernametext}:</span><br>
+              <input class="input2" name="username" type="text">
+              <span class="text1">{passwordtext}:</span><br>
+              <input class="input2" name="userpass" type="password" id="userpass">
+              <input type="checkbox" name="checkboxpsave" value="save"><span class="text1">{passwordsavetext}</span>
+              </td>
+           </TR>
+           <TR class="tableinhalt2">
+             <TD align = "center"><input name="login" type="submit" id="login" value="&nbsp;&nbsp;&nbsp;&nbsp;{loginbuttontext}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"></td>
+           </tr>
+         </tbody>
+       </table>
+</form>
+</center>
+{footer}

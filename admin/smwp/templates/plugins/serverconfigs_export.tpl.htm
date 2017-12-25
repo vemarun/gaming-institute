@@ -1,0 +1,43 @@
+<form style="margin:0" method="post" action="output.php?exarea=serverconfigs&file={serverconfigs_export_file}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+         <TD class="tablekopf" colspan="2">{serverconfigs_pluginname}&nbsp;-->&nbsp;<u>{serverconfigs_serverid_cvar}&nbsp;=&nbsp;{sid}</u>&nbsp;-->&nbsp;{serverconfigs_export_discription}</TD>
+      </TR>
+	  <TR class="tableinhalt1">
+         <TD width="15%" align = "right" valign = "middle"><span class="text1">{serverconfigs_export_file_discription}:</span></TD>
+         <TD width="85%"><span class="text1">{serverconfigs_export_file}</span></td>
+	  </tr>		
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{serverconfigs_export_filecode_discription}:</span></TD>
+        <td align="left"><textarea class="textareaexportcode" name="code">{serverconfigs_export_filecode}</textarea></td>
+      </TR>
+	  
+	  
+	  <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" border="0">
+            <TR>
+              <TD>
+               <form style="margin:0">
+                <center>
+                  <input name="export" type="submit" id="save" value="&nbsp;&nbsp;&nbsp;&nbsp;{serverconfigs_export_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">     
+                </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="javascript:history.back()">
+                  <center>
+           <input name="backbutton" type="submit" id="back" value="&nbsp;&nbsp;&nbsp;&nbsp;{serverconfigs_back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">   
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+	  
+    </TBODY>
+  </TABLE>
+</form>
+<br>

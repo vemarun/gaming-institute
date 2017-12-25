@@ -1,0 +1,46 @@
+<!-- start group_overrides.tpl.htm -->
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="6">{menue_groupoverrides}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="22%" align = "left"><span class="text1"><b>{menue_groupoverrides_name}<b></span></TD>
+        <TD width="12%"  align = "left"><span class="text1"><b>{menue_groupoverrides_group_id}<b></span></TD>
+        <TD width="22%" align = "left"><span class="text1"><b>{menue_groupoverrides_group_name}<b></span></TD>
+        <TD width="12%" align = "left"><span class="text1"><b>{menue_groupoverrides_type}<b></span></TD>
+        <TD width="12%" align = "left"><span class="text1"><b>{menue_groupoverrides_access}<b></span></TD>
+        <TD width="20%" align = "center"><span class="text1"><b>{menue_groupoverrides_action}<b></span></TD>
+      </TR>
+        <!-- BEGIN groupoverrideanzeigeempty -->
+          <TR class="tableinhalt1">
+             <td align = "center" colspan="6"><span class="text1"><br>{groupoverrides_empty}<br><br></span></td>
+          </TR>
+        <!-- END groupoverrideanzeigeempty -->
+        <!-- BEGIN groupoverrideanzeige -->
+          <TR class="tableinhalt1">
+             <td align = "left"><span class="text1">{groupoverrides_name}</span></td>
+             <td align = "left"><span class="text1">{groupoverrides_group_id}</span></td>
+             <td align = "left"><span class="text1">{groupoverrides_group_name}</span></td>
+             <td align = "left"><span class="text1">{groupoverrides_type}</span></td>
+             <td align = "center"><span class="text1">{groupoverrides_access}</span></td>
+             <td align = "center">
+               <a class="link1" href="index.php?section=groupoverrides&action=editoverride&name={groupoverrides_name}&groupid={groupoverrides_group_id}&type={overrides_type_value}">{menue_groupoverrides_edit}</a>
+               &nbsp;/&nbsp;
+               <a class="link1" href="index.php?section=groupoverrides&action=deloverride&name={groupoverrides_name}&groupid={groupoverrides_group_id}&type={overrides_type_value}">{menue_groupoverrides_del}</a>
+             </td>
+          </TR>
+        <!-- END groupoverrideanzeige -->
+      <TR class="tableinhalt2">
+        <TD colspan="6">
+          <form style="margin:0" method="post" action="index.php?section=groupoverrides&action=addoverride">
+            <center>
+              <input name="addgroupoverridebutton" type="submit" id="addgroupoverride" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_groupoverride_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+            </center>
+          </form>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+<!-- end group_overrides.tpl.htm -->
+

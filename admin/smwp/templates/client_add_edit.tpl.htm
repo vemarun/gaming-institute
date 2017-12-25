@@ -1,0 +1,74 @@
+<form style="margin:0" method="post" action="{execaddeditclient}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="3">{menue_clients}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="3">
+          <span class="text1"><b>{menue_client_info_general}:</b></span><br>
+          <span class="text1"><i>{password_change_text}</i></span>
+        </td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD width="35%" align = "right"><span class="text1">{menue_client_nick}:</span></TD>
+        <TD width="65%" colspan="2"><input class="input1" name="clientnick" type="text" value="{client_nick}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_client_authtype}:</span></TD>
+        <TD colspan="2">
+          <select name="clientauthtype">
+            <!-- BEGIN scrollauthtypeblock -->
+            <option value="{scrollauthtypevalue}"{scrollauthtypeselected}>{scrollauthtype}</option>
+            <!-- END scrollauthtypeblock -->
+          </select>
+        </TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_client_identity}:</span></TD>
+        <TD colspan="2"><input class="input1" name="clientidentity" type="text" value="{client_identity}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_client_immunity}:</span></TD>
+        <TD colspan="2"><input class="input1" name="clientimmunity" type="text" value="{client_immunity}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_client_pass}:</span></TD>
+        <TD colspan="2"><input class="input1" name="clientpass" type="password" id="userpass"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_client_pass_retry}:</span></TD>
+        <TD colspan="2"><input class="input1" name="clientpassretry" type="password" id="userpass"></TD>
+      </TR>
+     <!-- BEGIN passsetblock -->
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_client_passset}:</span></TD>
+        <TD width="10%" align = "center"><span class="text1"><font color="red"><b>{client_passset}</b></font></TD>
+        <TD width="55%" align = "left"><a class="link1" href="index.php?section=clients&action=delpw&id={client_id}">&raquo;&nbsp;{menue_pw_del}&nbsp;&laquo;</a></TD>
+      </TR>
+      <!-- END passsetblock -->
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="3">
+          <TABLE width="100%" border="0">
+            <TR>
+              <TD>
+               <form style="margin:0">
+                <center>
+                  <input name="addeditclientbutton" type="submit" id="execaddeditclient" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_edit_client_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section=clients">
+                  <center>
+                    <input name="backbutton" type="submit" id="backtoclients" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_client_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>

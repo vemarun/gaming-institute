@@ -1,0 +1,44 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="4">{menue_overrides}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="18%" align = "left"><span class="text1"><b>{menue_overrides_name}<b></span></TD>
+        <TD width="13%" align = "left"><span class="text1"><b>{menue_overrides_type}<b></span></TD>
+        <TD width="49%" align = "left"><span class="text1"><b>{menue_overrides_flags}<b></span></TD>
+        <TD width="20%" align = "center"><span class="text1"><b>{menue_overrides_action}<b></span></TD>
+      </TR>
+        <!-- BEGIN overrideanzeigeempty -->
+          <TR class="tableinhalt1">
+             <td align = "center" colspan="6"><span class="text1"><br>{overrides_empty}<br><br></span></td>
+          </TR>
+        <!-- END overrideanzeigeempty -->
+        <!-- BEGIN overrideanzeige -->
+          <TR class="tableinhalt1">
+             <td align = "left"><span class="text1">{overrides_name}</span></td>
+             <td align = "left"><span class="text1">{overrides_type}</span></td>
+             <td align = "left"><span class="text1">{overrides_flags}</span></td>
+             <td align = "center">
+               <a class="link1" href="index.php?section=overrides&action=editoverride&name={overrides_name}&type={overrides_type_value}">{menue_overrides_edit}</a>
+               &nbsp;/&nbsp;
+               <a class="link1" href="index.php?section=overrides&action=deloverride&name={overrides_name}&type={overrides_type_value}">{menue_overrides_del}</a>
+             </td>
+          </TR>
+        <!-- END overrideanzeige -->
+      <TR class="tableinhalt2">
+        <TD colspan="4">
+          <form style="margin:0" method="post" action="index.php?section=overrides&action=addoverride">
+            <center>
+              <input name="addoverridebutton" type="submit" id="addoverride" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_override_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+            </center>
+          </form>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+  
+  <br>
+
+  {flaginfo}
+

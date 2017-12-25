@@ -1,0 +1,68 @@
+   <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{ban_header_text}&nbsp;-->&nbsp;{ban_info_details}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2"><span class="text1">&nbsp;</span></td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right" width="35%"><span class="text1"><b>{ban_nick_discription}:<b></span></TD>
+        <TD align = "left" width="65%"><span class="text1">{ban_nick}</span></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right" width="35%"><span class="text1"><b>{ban_steamid_discription}:<b></span></TD>
+        <TD align = "left" width="65%"><span class="text1">{ban_steamid}</span></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1"><b>{ban_ip_discription}:</b></span></TD>
+        <TD align = "left"><span class="text1">{ban_ip}</span></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1"><b>{ban_date_discription}:</b></span></TD>
+        <TD align = "left"><span class="text1">{ban_date}</span></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1"><b>{ban_length_discription}</b>:</span></TD>
+        <TD align = "left"><span class="text1">{ban_length}</span></TD>
+      </TR>
+       <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1"><b>{ban_reason_discription}:</b></span></TD>
+        <TD align = "left"><span class="text1">{ban_reason}</span></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1"><b>{ban_by_discription}:</b></span></TD>
+        <TD align = "left"><span class="text1">{ban_by}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" colspan="2" border="0">
+            <TR>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=delban&page={page}&id={id}">
+                  <center>
+                   <input name="applybutton" type="submit" id="apply" value="&nbsp;&nbsp;&nbsp;&nbsp;{bandetails_delete_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&page={page}">
+                  <center>
+                   <input name="applybutton" type="submit" id="apply" value="&nbsp;&nbsp;&nbsp;&nbsp;{ban_back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=editban&page={page}&id={id}">
+                  <center>
+                    <input name="backbutton" type="submit" id="back" value="&nbsp;&nbsp;&nbsp;&nbsp;{bandetails_edit_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>

@@ -1,0 +1,73 @@
+
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{menue_export}</TD>
+      </TR>
+
+      <form style="margin:0" method="post" action="{export_create}">
+
+      <TR class="tableinhalt2">
+        <TD align = "right"><span class="text1">{menue_export_servergroups}:</span></TD>
+        <TD align = "left">
+          <select name="server">
+            <!-- BEGIN servergroupsblock -->
+              <option value="{scrollservergroupsvalue}"{scrollservergroupsselected} {scrollservergroupsdisabled}>{scrollservergroups}</option>
+            <!-- END servergroupsblock -->
+          </select>
+        </TD>
+      </TR>
+
+      
+      <TR class="tableinhalt2">
+       <TD width="15%" align = "right" valign = "middle"><span class="text1">{menue_export_outputfile}:</span></TD>
+        <TD width="85%">
+
+          <select name="outputfile">
+          <!-- BEGIN outputfileselectblock -->
+            <option value="{outputfilevalue}"{outputfileselect}>{export_outputfile_select_text}</option>
+          <!-- END outputfileselectblock -->
+          </select>
+          &nbsp;
+          <input type="radio" name="exportart" value="0"{checked_save}><span class="text1">{option_export_save}</span>
+          <input type="radio" name="exportart" value="1"{checked_upload}><span class="text1">{option_export_upload}</span>
+          &nbsp;
+          <input name="createbutton" type="submit" id="create" value="&nbsp;&nbsp;&nbsp;&nbsp;{export_create_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+
+        </TD>
+      </TR>
+      </form>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_export_outputfile_name}:</span></TD>
+        <TD align = "left"><span class="text1"><b>{export_outputfile_name}</b>&nbsp;{export_outputfile_info}</span></TD>
+      </TR>
+        <!--<form style="margin:0" method="post" action="{export_save}">   -->
+        <form style="margin:0" method="post" action="{export_exec}">
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_export_filecode}:</span></TD>
+        <td align="left"><textarea class="textareaexportcode" name="code">{export_filecode}</textarea></td>
+      </TR>
+
+
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <!-- BEGIN button -->
+          <input name="export" type="submit" id="save" value="&nbsp;&nbsp;&nbsp;&nbsp;{export_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+          <!-- END button -->
+          <!-- BEGIN nobutton -->
+            <span class="text1"><b>{export_ftp_error}</b></span>
+          <!-- END nobutton -->
+
+        </TD>
+      </TR>
+
+
+
+      
+      
+      </form>
+    </TBODY>
+  </TABLE>
+
+
+<br>

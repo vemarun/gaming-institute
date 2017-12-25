@@ -1,0 +1,119 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <td class="tablekopf" colspan="3">{maprate_pluginname}&nbsp;-->&nbsp;{maprate_detailed_overview_text}</td>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "left" colspan="3">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="30%" align="center"><span class="text1"><b>{maprate_votes_discription}:</b>{maprate_allvotes}</span></td>
+              <td width="35%" align="center"><span class="text1">{show_sites_antry_counts}</span></td>
+              <td width="20%" align="center"><span class="text1"><b>{maprate_allpints_discription}:</b>{maprate_allpoints}</span></td>
+              <td width="15%" align="center"><a class="link1" href="index.php?section={section}&plugin={plugin}&action=reset">&raquo;&nbsp;{maprate_reset_text}&nbsp;&laquo;</a></td>
+            </tr>
+          </table>
+        </TD>
+      </TR>
+      <TR class="tableinhalt2" >
+        <TD align = "left" colspan="4">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="right"><img src="inc/pics/bars/bar_vertical_red_butom.gif" width="5" height="17"><img src="inc/pics/bars/bar_vertical_red_mid.gif" width="6" height="17"><img src="inc/pics/bars/bar_vertical_red_top.gif" width="6" height="17"></td>
+              <td align="left"><span class="text1">={maprate_terrible_discription}</span></td>
+              <td align="right"><img src="inc/pics/bars/bar_vertical_orange_butom.gif" width="5" height="17"><img src="inc/pics/bars/bar_vertical_orange_mid.gif" width="6" height="17"><img src="inc/pics/bars/bar_vertical_orange_top.gif" width="6" height="17"></td>
+              <td align="left"><span class="text1">={maprate_poor_discription}</span></td>
+              <td align="right"><img src="inc/pics/bars/bar_vertical_yellow_butom.gif" width="5" height="17"><img src="inc/pics/bars/bar_vertical_yellow_mid.gif" width="6" height="17"><img src="inc/pics/bars/bar_vertical_yellow_top.gif" width="6" height="17"></td>
+              <td align="left"><span class="text1">={maprate_average_discription}</span></td>
+              <td align="right"><img src="inc/pics/bars/bar_vertical_darkgreen_butom.gif" width="5" height="17"><img src="inc/pics/bars/bar_vertical_darkgreen_mid.gif" width="6" height="17"><img src="inc/pics/bars/bar_vertical_darkgreen_top.gif" width="6" height="17"></td>
+              <td align="left"><span class="text1">={maprate_good_discription}</span></td>
+              <td align="right"><img src="inc/pics/bars/bar_vertical_brightgreen_butom.gif" width="5" height="17"><img src="inc/pics/bars/bar_vertical_brightgreen_mid.gif" width="6" height="17"><img src="inc/pics/bars/bar_vertical_brightgreen_top.gif" width="6" height="17"></td>
+              <td align="left"><span class="text1">={maprate_excellent_discription}</span></td>
+            </tr>
+          </table>
+        </TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <td width="10%" align="left"><span class="text1"><b>{maprate_mappicture_discription}</b></span>
+        <td width="50%" align="left"><span class="text1"><b>{maprate_details_discription}</b></span></td>
+        <td width="40%" align="left"><span class="text1"><b>{maprate_ratingsinformation_discription}</b></span></td>
+      </TR>
+      <!-- BEGIN mapview -->
+       <TR class="tableinhalt1">
+        <td width="10%" align="left"><a class="link1" href="index.php?section={section}&plugin={plugin}&map={maprate_map}"><img src="{maprate_mappic}" width="116" height="90" border="0"></a></td>
+        <td width="40%" align="left">
+          <table border="0" cellspacing="3" cellpadding="0">
+            <tr>
+              <td align="left"><span class="text1"><b>{maprate_map_discription}:</b></span></td>
+              <td align="left"><a class="link1" href="index.php?section={section}&plugin={plugin}&map={maprate_map}" title="{maprate_map}">{maprate_maptext}</a></td>
+            </tr>
+            <tr>
+              <td align="left"><span class="text1"><b>{maprate_votes_discription}:</b></span></td>
+              <td align="left"><span class="text1">{maprate_votes}</span></td>
+            </tr>
+            <tr>
+              <td align="left"><span class="text1"><b>{maprate_average_discription}:</b></span></td>
+              <td align="left"><span class="text1">{maprate_average}</span></td>
+            </tr>
+            <tr>
+              <td align="left"><span class="text1"><b>{maprate_votepoints_discription}:</b></span></td>
+              <td align="left"><span class="text1">{maprate_votepoints}</span></td>
+            </tr>
+          </table>
+        </td>
+        <td width="50%" align="left"><span class="text1">
+          <table border="0" cellspacing="1" cellpadding="0">
+            <tr valign="left">
+              <td width="120"><span class="text1">{maprate_ratevotes_1}&nbsp;{maprate_votes_discription}&nbsp;</span></td>
+              <td width="100"><span class="text1">{maprate_ratepercent_1}%</span><td>
+              <td width="{maprate_maxwidth}" nowrap>
+                <img src="inc/pics/bars/bar_vertical_red_butom.gif" width="5" height="17" alt="oben"><img src="inc/pics/bars/bar_vertical_red_mid.gif" width="{maprate_barwitch_1}" height="17" alt="mitte"><img src="inc/pics/bars/bar_vertical_red_top.gif" width="6" height="17" alt="unten">
+              </td>
+            </tr>
+            <tr valign="left">
+              <td><span class="text1">{maprate_ratevotes_2}&nbsp;{maprate_votes_discription}&nbsp;</span></td>
+              <td><span class="text1">{maprate_ratepercent_2}%</span><td>
+              <td nowrap>
+                <img src="inc/pics/bars/bar_vertical_orange_butom.gif" width="5" height="17" alt="oben"><img src="inc/pics/bars/bar_vertical_orange_mid.gif" width="{maprate_barwitch_2}" height="17" alt="mitte"><img src="inc/pics/bars/bar_vertical_orange_top.gif" width="6" height="17" alt="unten">
+              </td>
+            </tr>
+            <tr valign="left">
+              <td><span class="text1">{maprate_ratevotes_3}&nbsp;{maprate_votes_discription}&nbsp;</span></td>
+              <td><span class="text1">{maprate_ratepercent_3}%</span><td>
+              <td nowrap>
+                <img src="inc/pics/bars/bar_vertical_yellow_butom.gif" width="5" height="17" alt="oben"><img src="inc/pics/bars/bar_vertical_yellow_mid.gif" width="{maprate_barwitch_3}" height="17" alt="mitte"><img src="inc/pics/bars/bar_vertical_yellow_top.gif" width="6" height="17" alt="unten">
+              </td>
+            </tr>
+            <tr valign="left">
+              <td><span class="text1">{maprate_ratevotes_4}&nbsp;{maprate_votes_discription}&nbsp;</span></td>
+              <td><span class="text1">{maprate_ratepercent_4}%</span><td>
+              <td nowrap>
+                <img src="inc/pics/bars/bar_vertical_darkgreen_butom.gif" width="5" height="17" alt="oben"><img src="inc/pics/bars/bar_vertical_darkgreen_mid.gif" width="{maprate_barwitch_4}" height="17" alt="mitte"><img src="inc/pics/bars/bar_vertical_darkgreen_top.gif" width="6" height="17" alt="unten">
+              </td>
+            </tr>
+            <tr valign="left">
+              <td><span class="text1">{maprate_ratevotes_5}&nbsp;{maprate_votes_discription}&nbsp;</span></td>
+              <td><span class="text1">{maprate_ratepercent_5}%</span><td>
+              <td nowrap>
+                <img src="inc/pics/bars/bar_vertical_brightgreen_butom.gif" width="5" height="17" alt="oben"><img src="inc/pics/bars/bar_vertical_brightgreen_mid.gif" width="{maprate_barwitch_5}" height="17" alt="mitte"><img src="inc/pics/bars/bar_vertical_brightgreen_top.gif" width="6" height="17" alt="unten">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </TR>
+       <!-- END mapview -->
+      <!-- BEGIN mapviewempty -->
+      <TR class="tableinhalt1">
+        <td align = "center" colspan="3"><span class="text1"><br>{maprate_novotes}<br><br></span></td>
+      </TR>
+      <!-- END mapviewempty -->
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="3"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <td align = "center" colspan="3">
+         <a class="link1" href="index.php?section={section}&plugin={plugin}&view=simple">&raquo;&nbsp;{maprate_simple_overview_text}&nbsp;&laquo;</a>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>

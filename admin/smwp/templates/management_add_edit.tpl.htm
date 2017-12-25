@@ -1,0 +1,43 @@
+<form style="margin:0" method="post" action="{execeditextravalue}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{menue_extravalue_add_edit}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <span class="text1"><b>{menue_extravalue_info_general}:</b></span><br>
+        </td>
+      </TR>
+      <TR class="tableinhalt1">
+        <!-- BEGIN editextravalueblock -->
+        <TD align = "right"><span class="text1">{menue_extravalue}:</span></TD>
+        <TD><input class="input1" name="{name_extravalue}" type="text" value="{value_extravalue}"></TD>
+        <!-- END editextravalueblock -->
+      </TR>
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" colspan="2" border="0">
+            <TR>
+              <TD>
+               <form style="margin:0">
+                <center>
+                  <input name="editextravaluebutton" type="submit" id="execeditextravalue" value="&nbsp;&nbsp;&nbsp;&nbsp;{edit_extravalue_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="{editextravaluebacklink}">
+                  <center>
+                    <input name="backbutton" type="submit" id="backtoclients" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_extravalue_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>
+<br>

@@ -1,0 +1,8 @@
+# System artifacts
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Project
+includes/db.php
+phpDocumentor/

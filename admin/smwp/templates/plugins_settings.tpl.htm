@@ -1,0 +1,71 @@
+<form style="margin:0" method="post" action="index.php?section={section}&action=applysettings&id={plugin_id}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="3">{menue_plugins}&nbsp;-->&nbsp;<u>{plugin_name}</u>&nbsp;v{plugin_version}&nbsp;by&nbsp;{plugin_author}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="3">
+          <span class="text1"><b>{menue_plugin_settings_general}:</b></span><br>
+        </td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD width="36%" align = "right"><span class="text1">{menue_plugin_shownavi_long}:</span></TD>
+        <TD width="64%" colspan="2">
+          <select name="shownavi">
+            <!-- BEGIN scrollshownaviblock -->
+            <option value="{scrollshownavivalue}"{scrollshownaviselected}>{scrollshownavi}</option>
+            <!-- END scrollshownaviblock -->
+          </select>
+        </TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_plugin_database_table}:</span></TD>
+        <TD align = "left" colspan="2"><input class="input1" name="tablename" type="text" value="{plugin_table}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_plugin_support_link}:</span></TD>
+        <TD align = "left" colspan="2"><input class="input4" name="supportlink" type="text" value="{plugin_support_link}"></TD>
+      </TR>
+
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_plugin_database_table}&nbsp;<b>{plugin_table}</b>:</span></TD>
+        <TD width="15%" align = "center"><span class="text1"><b>{plugin_database_table}</b></font></TD>
+        <TD width="50%" align = "left">
+        <a class="link1" href="index.php?section={section}&action={tableaction}&id={plugin_id}">&raquo;&nbsp;{tableaction_text}&nbsp;&laquo;</a></TD>
+      </TR>
+
+      <TR class="tableinhalt2">
+        <TD colspan="3">
+          <span class="text1"><b>{menue_plugin_settings_specific}:</b></span><br>
+      </td>
+      </TR>
+      {specific_settings}
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="3">
+
+          <TABLE width="100%" border="0">
+            <TR>
+              <TD>
+               <form style="margin:0">
+                <center>
+                  <input name="applytbutton" type="submit" id="apply" value="&nbsp;&nbsp;&nbsp;&nbsp;{apply_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section=plugins">
+                  <center>
+                    <input name="backbutton" type="submit" id="backt" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+
+
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>

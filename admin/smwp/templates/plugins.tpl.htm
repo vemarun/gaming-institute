@@ -1,0 +1,35 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="7">{menue_plugins}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="4%" align = "left"><span class="text1"><b>{menue_plugin_id}</b></span></TD>
+        <TD width="20%" align = "left"><span class="text1"><b>{menue_plugin_name}</b></span></TD>
+        <TD width="9%" align = "left"><span class="text1"><b>{menue_plugin_version}</b></span></TD>
+        <TD width="28%" align = "left"><span class="text1"><b>{menue_plugin_author}</b></span></TD>
+        <TD width="14%" align = "center"><span class="text1"><b>{menue_plugin_database_table}</b></span></TD>
+        <TD width="12%" align = "center"><span class="text1"><b>{menue_plugin_shownavi}</b></span></TD>
+        <TD width="13%" align = "center"><span class="text1"><b>{menue_plugin_options}</b></span></TD>
+      </TR>
+      <!-- BEGIN pluginsanzeige -->
+      <TR class="tableinhalt1">
+        <TD align = "left"><span class="text1">{plugin_id}</span></TD>
+        <TD align = "left"><a class="link1" href="{plugin_support_link}" target="_blank">{plugin_name}</a></TD>
+        <TD align = "left"><span class="text1">{plugin_version}</span></TD>
+        <TD align = "left"><a class="link1" href="{plugin_author_link}" target="_blank">{plugin_author}</a></TD>
+        <TD align = "center"><span class="text1"><b>{plugin_database_table}</b></span></TD>
+        <TD align = "center"><span class="text1"><b>{plugin_shownavi}</b></span></TD>
+        <TD align = "center">
+          <a class="link1" href="index.php?section=plugins&action=settings&id={plugin_id}">{plugin_options}</a>
+        </TD>
+      </TR>
+      <!-- END pluginsanzeige -->
+      <TR class="tableinhalt2">
+        <TD colspan="7">
+          &nbsp;
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+

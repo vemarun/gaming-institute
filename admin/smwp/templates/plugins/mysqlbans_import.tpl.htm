@@ -1,0 +1,83 @@
+
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="5">{ban_header_text}&nbsp;-->&nbsp;{ban_header_action_text}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="5"><span class="text1"><b>{ban_import_info_file}:</b></span></td>
+      </TR>
+      <form style="margin:0" method="post" enctype="multipart/form-data" action="index.php?section={section}&plugin={plugin}&action=execimportfile">
+      <TR class="tableinhalt1">
+        <TD colspan="2" width="30%" align = "right"><span class="text1">{ban_import_bannedby_discription}:</span></TD>
+        <TD colspan="3" width="70%" align = "left"><input class="input5" name="bannedby" type="text" value="{ban_import_bannedby}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD colspan="2"  align = "right"><span class="text1">{ban_import_file_discription}:</span></TD>
+        <TD colspan="3" width="60%">
+           <input size="60" name="datei" type="file">
+        </TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD colspan="5" align="center"><input name="addbanbutton" type="submit" id="addban" value="&nbsp;&nbsp;&nbsp;--&gt;&nbsp;{ban_import_button_text}&nbsp;&lt;--&nbsp;&nbsp;&nbsp;&nbsp;"></td>
+      </TR>
+      </form>
+      <TR class="tableinhalt2">
+        <TD colspan="5"><span class="text1"><b>{ban_import_info_sourcebans}:</b></span></td>
+      </TR>
+      <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=importsourcebans">
+
+      
+      
+
+
+
+      <TR class="tableinhalt1">
+      <td width="5%" rowspan=3>
+
+       <input type="radio" name="importart" value="1" checked></span>
+
+
+      </td>
+        <TD width="20%" align = "right"><span class="text1">{ban_import_hostname_discription}:</span></TD>
+        <TD width="26%" align = "left"><input class="input1" name="hostname" type="text" value="{ban_import_hostname}"></TD>
+        <TD width="17%" align = "right"><span class="text1">{ban_import_port_discription}:</span></TD>
+        <TD width="32%" align = "left">
+          <input class="input3" name="port" type="text" value="{ban_import_port}"><span class="text1"><i>&nbsp;( {ban_import_port_default_discription}: <b>3306</b> )</i></span>
+        </TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{ban_import_database_discription}:</span></TD>
+        <TD align = "left"><input class="input1" name="database" type="text" value="{ban_import_discription}"></TD>
+		<TD align = "right"><span class="text1">{ban_import_tableprefix_discription}:</span></TD>
+        <TD align = "left">
+          <input class="input3" name="port" type="text" value="{ban_import_tableprefix}"><span class="text1"><i>&nbsp;( {ban_import_tableprefix_default_discription}: <b>sb_</b> )</i></span>
+        </TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{ban_import_username_discription}:</span></TD>
+        <TD align = "left"><input class="input1" name="username" type="text" value="{ban_import_username}"></TD>
+        <TD align = "right"><span class="text1">{ban_import_password_discription}:</span></TD>
+        <TD align = "left"><input class="input1" name="password" type="password" id="dbpass"></TD>
+	  </TR>
+      <TR class="tableinhalt1">
+        
+		
+		<TD align = "left"><input type="radio" name="importart" value="0"></span></TD>
+        <TD colspan="4" align = "left"><span class="text1">{ban_import_config_data_discription}</span></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD colspan="5" align="center"><input name="addbanbutton" type="submit" id="addban" value="&nbsp;&nbsp;&nbsp;--&gt;&nbsp;{ban_import_button_text}&nbsp;&lt;--&nbsp;&nbsp;&nbsp;&nbsp;"></td>
+      </TR> 
+    </form>      
+      <TR class="tableinhalt2" align = "center">
+        <TD colspan="5">
+          <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&page={page}">
+            <center>
+              <input name="backbutton" type="submit" id="back" value="&nbsp;&nbsp;&nbsp;&nbsp;{ban_back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+            </center>
+          </form>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>

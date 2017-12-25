@@ -1,0 +1,61 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="{extravalue_colspan}">{menue_source}&nbsp;:</TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="{extravalue_colspan}"><span class="text1">{show_sites_antry_counts}</span></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <td valign="middle" align="center" colspan="{extravalue_colspan}">
+          <form style="margin:0" method="post" action="{target_add_link}">
+            <span class="text1">{menue_target_menue}:</span>
+            <select name="target">
+              <!-- BEGIN scrolltargetblock -->
+              <option value="{scrolltargetvalue}"{scrolltargetselected}>{scrolltarget}</option>
+              <!-- END scrolltargetblock -->
+            </select>
+            <span class="text1">&nbsp;</span>
+            <input name="addtarget" type="submit" id="addtargetbutton" value="&nbsp;&nbsp;&nbsp;&nbsp;{addtarget_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+          </form>
+        </td>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="5%"><span class="text1"><b>{menue_target_id}:</b></span></TD>
+        <TD><span class="text1"><b>{menue_target_name}:</b></span></TD>
+        <!-- BEGIN extravaluemenueblock -->
+        <TD align="center"><span class="text1"><b>{menue_extravalue}</b></span></TD>
+        <!-- END extravaluemenueblock -->
+        <TD width="29%" align="center"><span class="text1"><b>{menue_target_action}:</b></span></TD>
+      </TR>
+      <!-- BEGIN memberanzeige -->
+      <TR class="tableinhalt1">
+        <TD><span class="text1">{target_id}</span></TD>
+        <TD><span class="text1">{target_name}</span></TD>
+         {eee}
+        <td align = "center">
+          {fff}<a class="link1" href="{target_remove_link}">{menue_target_remove}</a>
+        </td>
+      </TR>
+      <!-- END memberanzeige -->
+      <!-- BEGIN memberanzeigeempty -->
+      <TR class="tableinhalt1">
+        <td align = "center" colspan="{extravalue_colspan}"><span class="text1"><br>{targets_empty}<br><br></span></td>
+      </TR>
+      <!-- END memberanzeigeempty -->
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="{extravalue_colspan}"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="{extravalue_colspan}">
+          <form style="margin:0" method="post" action="{back_link}">
+            <center>
+              <input name="backbutton" type="submit" id="backtoclients" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+            </center>
+            </form>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+
+

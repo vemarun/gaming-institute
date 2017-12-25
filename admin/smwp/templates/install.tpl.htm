@@ -1,0 +1,32 @@
+ <form style="margin:0" method="post" action="{filename}?action=apply{language}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{install_menue}</TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD width="40%" align = "right" align = "right"><span class="text1">{install_default_language_discription}:</span></TD>
+        <TD width="60%" align = "left">
+         <select name="default_language">
+           <!-- BEGIN defaultlanguagesblock -->
+             <option value="{defaultlanguagesvalue}"{defaultlanguagesselected}>{defaultlanguages}</option>
+           <!-- END defaultlanguagesblock -->
+          </select>
+
+          <!-- BEGIN defaultflaglanguagesblock -->
+          <a href="{filename}?setlanguage={defaultlanguagesvalue}"><img src="inc/pics/flags/{defaultlanguagesvalue}.gif" title="{defaultlanguagesvalue}" border=0></a>
+          <!-- END defaultflaglanguagesblock -->
+
+        </TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <center>
+            <input name="apply" type="submit" id="apply" value="&nbsp;&nbsp;&nbsp;&nbsp;{apply_install_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+          </center>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>
+<br><br><br><br>

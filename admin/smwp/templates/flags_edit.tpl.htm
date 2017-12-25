@@ -1,0 +1,50 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{menue_editflags}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="20%" align = "right"><span class="text1">{menue_editflags_target}:</span></TD>
+        <TD width="80%" valign="middle">
+          <form name="viewstargets" style="margin:0" method="post" action="{editflags_viewstarget}">
+            <select name="target">
+              <!-- BEGIN scrolltargetblock -->
+              <option value="{scrolltargetvalue}"{scrolltargetselected}>{scrolltarget}</option>
+              <!-- END scrolltargetblock -->
+            </select>&nbsp;
+           <input name="viewtargetbutton" type="submit" id="viewtargetbutton" value="&nbsp;&nbsp;&nbsp;&nbsp;{viewtargetbutton_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+          </form>
+        </TD>
+      </TR>
+      <form name="apllyflags" style="margin:0" method="post" action="{editflagsapplyaction}">
+      <TR class="tableinhalt1">
+         <TD align = "right" valign = "top"><span class="text1">{menue_editflags_flags}:</span></TD>
+         <TD>{flagscheckbox}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" border="0">
+            <TR>
+              <TD>
+                <form style="margin:0">
+                  <center>
+                    <input name="execeditflagsbutton" type="submit" id="execeditflagsbutton" value="&nbsp;&nbsp;&nbsp;&nbsp;{exec_editflags_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+              <TD>
+                <form name="back" style="margin:0" method="post" action="{editflags_backaction}">
+                  <center>
+                    <input name="backbutton" type="submit" id="backtoflag" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_editflags_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+           </form>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+
+

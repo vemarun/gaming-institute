@@ -1,0 +1,97 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{serverconfigs_pluginname}&nbsp;-->&nbsp;{serverconfigs_serverid_cvar}&nbsp;=&nbsp;{sid}&nbsp;-->&nbsp;{serverconfigs_files_discription}</TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD colspan="2" align="center">
+          <table width="1%" align="center"border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=copyeditdelexportfile&sid={sid}">
+              <td>
+                <select name="filescrollbox">
+                <!-- BEGIN filesanzeigescrollbox -->
+                  <option value="{serverconfigs_file_value}"{scrollserverselected}>{serverconfigs_file}</option>
+                <!-- END filesanzeigescrollbox -->
+                </select>
+              </td>
+              <td>&nbsp;<span class="text1">=</span>&nbsp;</td>
+              <td align="center"><input type="submit" value="{serverconfigs_file_copy_button_text}" name="copy" title="{serverconfigs_file_copy_pic_infotext}"></td>
+              <td>&nbsp;</td>
+              <td align="center"><input type="submit" value="{serverconfigs_file_edit_button_text}" src="inc/pics/edit.gif" name="edit" title="{serverconfigs_file_edit_pic_infotext}" width="16" height="16"></td>
+              <td>&nbsp;</td>
+              <td align="center"><input type="submit" value="{serverconfigs_file_del_button_text}" src="inc/pics/del.png" name="del" title="{serverconfigs_file_delete_pic_infotext}" width="16" height="16"></td>
+			  <td>&nbsp;</td>
+              <td align="center"><input type="submit" value="{serverconfigs_file_export_button_text}" name="export" title="{serverconfigs_file_export_pic_infotext}" width="16" height="16"></td>
+              <td>&nbsp;|</td>
+              </form>
+              <td align="left" width="100%">
+                
+				<table border="0">
+				<tr>
+				<td>
+<form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=importfile&sid={sid}">
+                 <input name="addfilebutton" type="submit" id="addfile" value="{serverconfigs_file_import_button_text}">
+                </form>
+				</td>
+				<td>				
+				<form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=addfile&sid={sid}">
+                  <input name="addfilebutton" type="submit" id="addfile" value="&nbsp;&nbsp;&nbsp;&nbsp;{serverconfigs_new_file_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </form>
+				</td>
+				</tr>
+				</table>
+				
+              </td>
+            </tr>
+          </table>
+        </TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="50%" align="center"><span class="text1"><b>{serverconfigs_files_overview_discription}<b></span></TD>
+        <TD width="50%" align="center"><span class="text1"><b>{serverconfigs_server_overview_discription}<b></span></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align="center" valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="inc/pics/server.gif" title="{serverconfigs_serverid_cvar}&nbsp;=&nbsp;{sid}" border=0></td>
+              <td width="100%" align="left"><span class="text1">&nbsp;{serverconfigs_serverid_cvar}&nbsp;=&nbsp;{sid}</span></td>
+            </tr>
+            <!-- BEGIN filesanzeige -->
+            <tr>
+              <td colspan="2">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center"><img src="inc/pics/{serverconfigs_gitter}"border=0></td>
+                    <td align="right"><img src="inc/pics/textfile.gif" title="{serverconfigs_file}" border=0></td>
+                    <td align="left"><a class="link1" href="index.php?section={section}&plugin={plugin}&sid={sid}&file={serverconfigs_file}">{serverconfigs_file}</a></td>
+                    <td width="100%"align="left"><span class="text1">&nbsp;({serverconfigs_commands})</span></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- END filesanzeige -->
+          </table>
+          <br>
+        </TD>
+        <td>
+          <ul>
+          <!-- BEGIN serveranzeige -->
+          <li><span class="text1">{serverconfigs_servername}</span></li>
+          <!-- END serveranzeige -->
+          </ul>
+        </td>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <form style="margin:0" method="post" action="index.php?section=servermanagement&plugin={plugin}">
+             <center>
+               <input name="backbutton" type="submit" id="back" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+             </center>
+           </form>
+         </td>
+       </TR>
+    </TBODY>
+  </TABLE>
+

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>jQuery sPreLoader Plugin Demo</title>
+
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+
+	<!--   COUSTOM CSS link  -->
+	<link rel="stylesheet" href="preloader/style.css">
+
+</head>
+
+<body>
+	<!-- Preloader Start -->
+	<div id="main-preloader" class="main-preloader semi-dark-background">
+		<div class="main-preloader-inner center">
+
+			<h1 class="preloader-percentage center">
+				<span class="preloader-percentage-text">0</span>
+				<!-- Show Percentage Number -->
+				<span class="percentage">%</span>
+			</h1>
+			<div class="preloader-bar-outer">
+				<div class="preloader-bar"></div>
+				<!-- Percentage Precess Bar -->
+			</div>
+
+		</div>
+	</div>
+	<!-- Preloader Start -->
+
+	<!-- Content Start -->
+	<div class="container">
+
+
+	</div>
+
+	<img src="https://unsplash.it/585/400?image=454" alt="">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="preloader/sPreloader.js"></script>
+
+	<script type="text/javascript">
+		$('body').jpreLoader({
+			preMainSection: '#main-preloader',
+			prePerText: '.preloader-percentage-text',
+			preBar: '.preloader-bar',
+		});
+
+	</script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36251023-1']);
+		_gaq.push(['_setDomainName', 'jqueryscript.net']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <td class="tablekopf" colspan="5">{sqlfeedback_header_text}</td>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="5">
+                
+	     
+      <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&page={current_site}">
+		 <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right">
+                  <span class="text1">{sqlfeedback_server_discription}:</span>
+                </td>
+                <td align="center">{serverscrollbox}</td>
+                <td align="left">
+                  <input name="goserverbutton" type="submit" id="go" value="&nbsp;&nbsp;&nbsp;&nbsp;{sqlfeedback_server_go_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  <span class="text1">&frasl;</span>
+                  <input name="resetserverbutton" type="submit" id="reset" value="&nbsp;&nbsp;&nbsp;&nbsp;{sqlfeedback_server_reset_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                 </td>
+              </tr>
+            </table>
+	</form>
+            {search}
+			
+		</TD>
+      </TR>
+ <TR class="tableinhalt1" >
+        <TD align = "center" colspan="5"><span class="text1">{show_sites_antry_counts}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+
+        <TD width="10%" align = "left"><span class="text1"><b>{sqlfeedback_date_discription}<b></span></td>
+	    <TD width="20%" align = "left"><span class="text1"><b>{sqlfeedback_name_discription}<b></span></td>
+        <TD width="42%" align = "left"><span class="text1"><b>{sqlfeedback_feedback_discription}<b></span></td>        
+        <TD width="20"%" align = "center"><span class="text1"><b>{sqlfeedback_map_discription}<b></span></td>
+		<TD width="8%" align = "center"><span class="text1"><b>{sqlfeedback_game_discription}<b></span></td>
+      </TR>
+      <!-- BEGIN sqlfeedbackview -->
+      <TR class="tableinhalt1">
+        <td align = "left"><span class="text2">{sqlfeedback_date}</span></td>
+		<td align = "left"><span class="text2">{sqlfeedback_name}</span></td>
+        <td align = "left"><span class="text2"><p class="tooltip" title="{sqlfeedback_server}">{sqlfeedback_feedback}</p></span></td>
+     	<td align = "center"><span class="text2"><p class="tooltip" title="{sqlfeedback_server}">{sqlfeedback_map}</p></span></td>
+        <td align = "center"><span class="text2">{modpic}</td>
+      </TR>
+      <!-- END sqlfeedbackview -->
+      <!-- BEGIN sqlfeedbackviewempty -->
+      <TR class="tableinhalt1">
+        <td align = "center" colspan="5"><span class="text1"><br>{sqlfeedback_no_entrys}<br><br></span></td>
+      </TR>
+      <!-- END sqlfeedbackviewempty -->
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="5"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="5"><BR></td>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <br>

@@ -1,0 +1,55 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="3">{servermms_plugin}&nbsp;-->&nbsp;{servermms_discription}&nbsp;-->&nbsp;<u>{servermms_server_id_discription}&nbsp;=&nbsp;{servermms_server_id}</u></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <td valign="middle" align="center" colspan="3">
+          <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=addserver&id={servermms_server_id}">
+            <span class="text1">{servermms_server_discription}:</span>
+            <select name="server">
+              <!-- BEGIN scrollserverblock -->
+              <option value="{scrollservervalue}"{scrollserverselected}>{scrollserver}</option>
+              <!-- END scrollserverblock -->
+            </select>
+            <span class="text1">&nbsp;</span>
+            <input name="addserver" type="submit" id="addserverbutton" value="&nbsp;&nbsp;&nbsp;&nbsp;{addserver_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+          </form><span class="text1"><b>{servermms_warning_text}</b></span>
+        </td>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="22%" align="center"><span class="text1"><b>{servermms_id_discription}</b></span></TD>
+        <TD width="68%" align="center"><span class="text1"><b>{servermms_server_discription}</b></span></TD>
+        <TD width="10%" align="center"><span class="text1"><b>{servermms_options_discription}</b></span></TD>
+      </TR>
+      <!-- BEGIN serveranzeige -->
+      <TR class="tableinhalt1">
+        <TD align="center"><span class="text1">{servermms_id}</span></TD>
+        <TD align="center"><span class="text1">{servermms_server}</span></TD>
+        <TD align="center">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="center"><a class="link1" href="index.php?section={section}&plugin={plugin}&action=removeserver&id={servermms_server_id}&iid={servermms_id}"><img src="inc/pics/del.png" title="{servermss_remove_pic_infotext}" border=0></a><td>
+            </tr>
+          </table>
+        </TD>
+      </TR>
+      <!-- END serveranzeige -->
+      <!-- BEGIN serveranzeigeempty -->
+      <TR class="tableinhalt1">
+        <td align = "center" colspan="3"><span class="text1"><br>{servermms_empty}<br><br></span></td>
+      </TR>
+      <!-- END serveranzeigeempty -->
+      <TR class="tableinhalt2">
+        <TD colspan="3">
+          <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}">
+            <center>
+              <input name="backbutton" type="submit" id="backtoclients" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+            </center>
+            </form>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+
+

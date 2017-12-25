@@ -1,0 +1,71 @@
+<form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&action=usecommand&file={file}&sid={sid}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="4">{serverconfigs_pluginname}&nbsp;-->&nbsp;{serverconfigs_serverid_cvar}&nbsp;=&nbsp;{sid}&nbsp;-->&nbsp;<u>{serverconfigs_filename}</u></TD>
+      </TR>
+      <!-- BEGIN extrabuttonsyes -->
+      <TR class="tableinhalt1">
+        <TD align="left" colspan="4">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="center">
+                <input name="addbutton" type="submit" id="add" value="&nbsp;&nbsp;&nbsp;&nbsp;{serverconfigs_add_command_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+              </td>
+              <td align="center">
+                <input name="savebutton" type="submit" id="save" value="&nbsp;&nbsp;&nbsp;&nbsp;{serverconfigs_save_command_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+              </td>
+              <td align="center">
+               <input name="backbutton" type="submit" id="back" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </TR>
+      <!-- END extrabuttonsyes -->
+      <TR class="tableinhalt2">
+        <TD width="10%" align="center"><span class="text1"><b>{serverconfigs_command_activ_discription}<b></span></TD>
+        <TD width="30%" align="center"><span class="text1"><b>{serverconfigs_command_name_discription}<b></span></TD>
+        <TD width="50%" align="center"><span class="text1"><b>{serverconfigs_command_value_discription}<b></span></TD>
+        <TD width="10%" align="center"><span class="text1"><b>{serverconfigs_options_discription}<b></span></TD>
+      </TR>
+      <!-- BEGIN commandsanzeige -->
+      <TR class="tableinhalt1">
+        <td align="center"><input type="checkbox" name="{serverconfigs_command_name}_activ" value="1" {activchecked}></span></td>
+        <td align="right"><span class="text1">{serverconfigs_command_name}:</span></td>
+        <td align="left">{input}</td>
+        <td align="center">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="center"><a class="link1" href="index.php?section={section}&plugin={plugin}&action=editcommand&file={file}&sid={sid}&id={id}"><img src="inc/pics/properties.gif" title="{servermss_edit_pic_infotext}" border=0></a></td>
+              <td align="center"><a class="link1" href="index.php?section={section}&plugin={plugin}&action=delcommand&file={file}&sid={sid}&id={id}"><img src="inc/pics/del.png" title="{servermss_delete_pic_infotext}" border=0></a></td>
+            </tr>
+          </table>
+        </td>
+      </TR>
+      <!-- END commandsanzeige -->
+      <!-- BEGIN commandsanzeigeempty -->
+      <TR class="tableinhalt1">
+        <TD align="center" colspan="4"><span class="text1"><br>{serverconfigs_commands_empty}<br><br></span></td>
+      </TR>
+      <!-- END commandsanzeigeempty -->
+      <TR class="tableinhalt2">
+        <TD colspan="4">
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="center">
+                <input name="addbutton" type="submit" id="add" value="&nbsp;&nbsp;&nbsp;&nbsp;{serverconfigs_add_command_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+              </td>
+              <td align="center">
+                <input name="savebutton" type="submit" id="save" value="&nbsp;&nbsp;&nbsp;&nbsp;{serverconfigs_save_command_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+              </td>
+              <td align="center">
+               <input name="backbutton" type="submit" id="back" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>

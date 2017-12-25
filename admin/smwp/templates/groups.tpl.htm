@@ -1,0 +1,61 @@
+<!-- start clients.tpl.htm -->
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="6">{menue_groups}</TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="6">{search}</TD>
+      </TR>
+      <TR class="tableinhalt1" >
+        <TD align = "center" colspan="6"><span class="text1">{show_sites_antry_counts}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="5%"  align = "left"><span class="text1"><b>{menue_group_id}<b></span></TD>
+        <TD width="25" align = "left"><span class="text1"><b>{menue_group_name}<b></span></TD>
+        <TD width="16%" align = "center"><span class="text1"><b>{menue_group_immunitylevel}<b></span></TD>
+        <TD width="18%" align = "center"><span class="text1"><b>{menue_group_groupimmunity}<b></span></TD>
+        <TD width="16%" align = "center"><span class="text1"><b>{menue_group_member}<b></span></TD>
+        <TD width="20%" align = "center"><span class="text1"><b>{menue_group_action}<b></span></TD>
+      </TR>
+        <!-- BEGIN groupsanzeigeempty -->
+          <TR class="tableinhalt1">
+             <td align = "center" colspan="6"><span class="text1"><br>{groups_empty}<br><br></span></td>
+          </TR>
+        <!-- END groupsanzeigeempty -->
+        <!-- BEGIN groupsanzeige -->
+          <TR class="tableinhalt1">
+             <td align = "left"><span class="text1">{group_id}</span></td>
+             <td align = "left"><span class="text1">{group_name}</span></td>
+             <td align = "center"><span class="text1">{group_immunity}</span></td>
+             <td align = "center">
+                 <span class="text1">{group_groupimmunity}</span>
+                 <a class="link1" href="index.php?section=groupimmunity&id={group_id}">&raquo;&nbsp;{menue_group_edit}&nbsp;&laquo;</a>
+             </td>
+             <td align = "center">
+               <span class="text1">{group_member}&nbsp;</span>
+               <a class="link1" href="index.php?section=groupmember&id={group_id}">&raquo;&nbsp;{menue_group_edit}&nbsp;&laquo;</a>
+               </td>
+             <td align = "center">
+               <a class="link1" href="index.php?section=groups&action=editgroup&id={group_id}">{menue_group_edit}</a>
+               &nbsp;/&nbsp;
+               <a class="link1" href="index.php?section=groups&action=delgroup&id={group_id}">{menue_group_del}</a>
+             </td>
+          </TR>
+        <!-- END groupsanzeige -->
+       <TR class="tableinhalt1" >
+        <TD align = "center" colspan="6"><span class="page_switch_links">{text_goto_page}&nbsp;{switch_sites_links}</span></TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="6">
+          <form style="margin:0" method="post" action="index.php?section=groups&action=addgroup">
+            <center>
+              <input name="adduserbutton" type="submit" id="adduser" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_group_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+            </center>
+          </form>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+<!-- end clients.tpl.htm -->
+

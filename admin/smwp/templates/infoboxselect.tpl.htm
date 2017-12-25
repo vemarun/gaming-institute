@@ -1,0 +1,36 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf">
+          {infobox_header}
+        </TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "center">
+          <span class="text1"><b><br>{infobox_text}<br><br><b></span>
+        </TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD align = "center">
+          <TABLE width="100%" colspan="2" border="0">
+            <TR>
+              <TD>
+                <form style="margin:0" method="post" action="{infobox_yeslink}">
+                  <center>
+                    <input name="adduserbutton" type="submit" id="adduser" value="&nbsp;&nbsp;&nbsp;&nbsp;{infobox_button_text_yes}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="{infobox_nolink}">
+                  <center>
+                    <input name="adduserbutton" type="submit" id="adduser" value="&nbsp;&nbsp;&nbsp;&nbsp;{infobox_button_text_no}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </TD>
+      </TR>
+    </TBODY>
+  </TABLE>

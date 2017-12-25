@@ -1,0 +1,67 @@
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="7">{server_discription}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD width="5%"  align = "center"><span class="text1"><b>{server_mod_discription}<b></span></TD>
+        <TD width="4%"  align = "center"><span class="text1"><b>{server_os_discription}<b></span></TD>
+        <TD width="5%"  align = "center"><span class="text1"><b>{server_vac_discription}<b></span></TD>
+        <TD width="50%" align = "left"><span class="text1"><b>{server_name_discription}<b></span></TD>
+        <TD width="20%" align = "left"><span class="text1"><b>{server_ip_discription}/{server_port_discription}<b></span></TD>
+        <TD width="8%" align = "center"><span class="text1"><b>{server_status_discription}<b></span></TD>
+        <TD width="8%" align = "center"><span class="text1"><b>{server_options_discription}<b></span></TD>
+      </TR>
+        <!-- BEGIN serveranzeige -->
+          <TR class="tableinhalt1">
+          <td align="center">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                 <td align="center">{modpic}</td>
+                </tr>
+              </table>
+            </td>
+            <td align="center">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                 <td align="center">{server_os}</td>
+                </tr>
+              </table>
+            </td>
+            <td align="center">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                 <td align="center">{server_vac}</td>
+                </tr>
+              </table>
+            </td>
+            <td align="left"><span class="text2">{server_name}</span></td>
+            <td align="left"><span class="text2">{server_ip}:{server_port}</span></td>
+            <td align="center"><span class="text1"><b>{server_status}</b></span></td>
+            <td align="center">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center"><a class="link1" href="index.php?section={section}&action=editserver&id={server_id}"><img src="inc/pics/edit.gif" title="{server_edit_pic_infotext}" border=0></a><td>
+                  <td align="center"><a class="link1" href="index.php?section={section}&action=delserver&id={server_id}"><img src="inc/pics/del.png" title="{server_delete_pic_infotext}" border=0></a><td>
+                </tr>
+              </table>
+            </td>
+          </TR>
+        <!-- END serveranzeige -->
+        <!-- BEGIN serveranzeigeempty -->
+          <TR class="tableinhalt1">
+             <td align = "center" colspan="7"><span class="text1"><br>{server_empty}<br><br></span></td>
+          </TR>
+        <!-- END serveranzeigeempty -->
+      <TR class="tableinhalt2">
+        <TD colspan="7">
+          <form style="margin:0" method="post" action="index.php?section={section}&action=addserver">
+            <center>
+              <input name="addserverbutton" type="submit" id="addserver" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_server_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+            </center>
+          </form>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+

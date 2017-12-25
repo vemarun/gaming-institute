@@ -1,0 +1,51 @@
+<form style="margin:0" method="post" action="{execaddeditgroup}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{menue_groups_add_edit}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <span class="text1"><b>{menue_group_info_general}:</b></span><br>
+        </td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_group_name}:</span></TD>
+        <TD><input class="input1" name="groupname" type="text" value="{group_name}"></TD>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{menue_group_immunitylevel}:</span></TD>
+        <TD><input class="input1" name="groupimmunitylevel" type="text" value="{group_immunitylevel}"></TD>
+          <!--<select name="groupimmunity"> -->
+            <!-- BEGIN scrollimmunityblock -->
+            <!--<option value="{scrollimmunityvalue}"{scrollimmunityselected}>{scrollimmunity}</option> -->
+            <!-- END scrollimmunityblock -->
+          <!--</select>-->
+        </TD>
+      </TR>
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" colspan="2" border="0">
+            <TR>
+              <TD>
+               <form style="margin:0">
+                <center>
+                  <input name="addeditclientbutton" type="submit" id="execaddeditclient" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_edit_group_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section=groups">
+                  <center>
+                    <input name="backbutton" type="submit" id="backtoclients" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_group_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>
+<br>

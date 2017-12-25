@@ -1,0 +1,43 @@
+<form style="margin:0" method="post" action="output.php?exarea=mysqlbans">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{ban_header_text}&nbsp;-->&nbsp;{ban_header_action_text}</TD>
+      </TR>
+      <TR class="tableinhalt2">
+            <TD colspan="2"><span class="text1"><b>{ban_export_info_file}:</b></span></td>
+      </TR>
+      <TR class="tableinhalt1">
+        <TD width="35%" align="right"><span class="text1">{ban_export_file_discription}:</span></TD>
+        <TD width="65%" align="left">
+          
+            <input type="radio" name="file" value="banned_user.cfg" checked><span class="text1">{ban_export_file_steamid}</span>
+            <input type="radio" name="file" value="banned_ip.cfg"><span class="text1">{ban_export_file_ip}</span>
+          
+	      </TD>
+        <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" colspan="2" border="0">
+            <TR>
+              <TD>
+                <form style="margin:0">
+                  <center>
+                   <input name="applybutton" type="submit" id="applybutton" value="&nbsp;&nbsp;&nbsp;&nbsp;{ban_export_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+              <TD>
+              </form>
+                <form style="margin:0" method="post" action="index.php?section={section}&plugin={plugin}&page={page}">
+                  <center>
+                    <input name="backbutton" type="submit" id="back" value="&nbsp;&nbsp;&nbsp;&nbsp;{ban_back_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+

@@ -1,0 +1,61 @@
+<form style="margin:0" method="post" enctype="multipart/form-data" action="{execaddeditmod}">
+  <TABLE class="anztable" cellSpacing=1 cellPadding=4>
+    <TBODY>
+      <TR>
+        <TD class="tablekopf" colspan="2">{mod_edit_add_discription}</TD>
+      </TR>
+
+      <TR class="tableinhalt2">
+        <TD colspan="2">
+          <span class="text1"><b>{mod_info_general}:</b></span><br>
+        </td>
+      </TR>
+
+      <TR class="tableinhalt1">
+        <TD width="35%" align = "right"><span class="text1">{mod_name_discription}:</span></TD>
+        <TD width="65%" align = "left"><input class="input1" name="name" type="text" value="{mod_name}"></TD>
+      </TR>
+
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{mod_folder_discription}:</span></TD>
+        <TD align = "left"><input class="input1" name="folder" type="text" value="{mod_folder}"></TD>
+      </TR>
+
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{mod_pic_discription}:</span></TD>
+        <TD align = "left">{picmanagement}</TD>
+      </TR>
+
+      <TR class="tableinhalt1">
+        <TD align = "right"><span class="text1">{mod_advert_discription}:</span></TD>
+        <TD align = "left">
+          <input class="input1" name="adverts" type="text" value="{mod_advert}">
+          <span class="text1"><i>({mod_advert_info})</i></span>
+        </TD>
+      </TR>
+
+      <TR class="tableinhalt2">
+        <TD align = "center" colspan="2">
+          <TABLE width="100%" border="0">
+            <TR>
+              <TD>
+               <form style="margin:0">
+                <center>
+                  <input name="addeditmodbutton" type="submit" id="execaddeditmod" value="&nbsp;&nbsp;&nbsp;&nbsp;{add_edit_mod_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                </center>
+                </form>
+              </TD>
+              <TD>
+                <form style="margin:0" method="post" action="index.php?section=mods">
+                  <center>
+                    <input name="backbutton" type="submit" id="backtomods" value="&nbsp;&nbsp;&nbsp;&nbsp;{back_mods_button_text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                  </center>
+                </form>
+              </TD>
+            </TR>
+          </TABLE>
+        </td>
+      </TR>
+    </TBODY>
+  </TABLE>
+</form>
