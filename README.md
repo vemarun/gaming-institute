@@ -1,6 +1,6 @@
 # GIC Website Source
 
-Gaming Institute India Website Source code
+Gaming Institute Community India Website Source code
 
 [Steam Group](https://steamcommunity.com/groups/gamiin)
 
