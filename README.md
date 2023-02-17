@@ -18,5 +18,6 @@ Modules
     Server Map CDN
     Dynamic TF2 Server Map Upload, Change / Rotate from website itself
     Realtime Donations and Discord notification
+    RCON Servers from Website
 
 
