@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/images/logo2.png?raw=true" />
+</p>
+
 # GIC Website Source
 
 Gaming Institute Community India Website Source code
@@ -20,4 +24,9 @@ Modules
     Realtime Donations and Discord notification
     RCON Servers from Website
 
+
+
+<p align="center">
+  <img src="/images/logo.png?raw=true" />
+</p>
 
