@@ -2,6 +2,8 @@
   <img src="/images/logo2.png?raw=true" />
 </p>
 
+![alt text](/images/banner2.png)
+
 # GIC Website Source
 
 Gaming Institute Community India Website Source code
