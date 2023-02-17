@@ -1,25 +1,19 @@
-# Any key present in project is useless.
-# some gicwebsite modules
+# GIC Website Source
 
-# Home Page
-![homepage](https://screenshotscdn.firefoxusercontent.com/images/4e22e1a2-f3be-4d0d-addf-ca4004dfd721.png)
-![HOMEPAGE2](https://screenshotscdn.firefoxusercontent.com/images/5cb64ea1-7710-44ce-9ba7-52ae585a56a5.png)
+Gaming Institute Website Source code
 
-# Admin panel - User tracking, Automatic Tournament Creation, Server Control , Control Website Background etc.
-![automatic tournament creation](https://screenshotscdn.firefoxusercontent.com/images/1ea3ea7e-4969-43a9-891f-9ee4b53bcfb9.png)
+- GIC was a popular indian community that used to run TF2 community servers. GIC payload server was most popular Asian community server in 2017 and 2018 ranking between 9 - 60 on game tracker with greater than 20 average players. GIC had 28 thousand unique players from 110+ countries. GIC shut down all its server in june 2018. 
 
-![admin panel 2](https://screenshotscdn.firefoxusercontent.com/images/ae151db0-685f-433e-b1ab-ca4d90f74654.png)
-
-# Members Area
-![member area](https://screenshotscdn.firefoxusercontent.com/images/6712414a-d9a7-4db7-9679-ea2ea1c72da6.png)
-
-# Server Booking
-![server booking](https://screenshotscdn.firefoxusercontent.com/images/89639015-d1a8-4728-b84e-94d09d03cc28.png)
-
-# Server Control
-![server control](https://screenshotscdn.firefoxusercontent.com/images/9023dabe-dd20-42be-9f28-94308b439b57.png)
-
-# Donation Module
-![Fully Automatic donation system](https://screenshotscdn.firefoxusercontent.com/images/a973dc82-b2f3-460b-b23d-5b94b7792f57.png)
+Modules 
+    
+    Website
+    HLstats X  - Live Server and Player stats
+    SourceBans - To ban / unban players from website
+    Tournament Creater
+    Tournament Standings and Brackets
+    Team Handling
+    Game Server Provisioning
+    Server Map CDN
+    Dynamic TF2 Server Map Upload, Change / Rotate from website itself
 
 
