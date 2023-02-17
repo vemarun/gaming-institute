@@ -1,6 +1,8 @@
 # GIC Website Source
 
-Gaming Institute Website Source code
+Gaming Institute India Website Source code
+
+[Steam Group](https://steamcommunity.com/groups/gamiin)
 
 - GIC was a popular indian community that used to run TF2 community servers. GIC payload server was most popular Asian community server in 2017 and 2018 ranking between 9 - 60 on game tracker with greater than 20 average players. GIC had 28 thousand unique players from 110+ countries. GIC shut down all its server in june 2018. 
 
